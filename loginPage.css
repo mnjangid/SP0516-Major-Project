@@ -20,8 +20,26 @@ body {
 .left-section {
     flex: 1;
     background-color: #3f51b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
+.left-section.logo{
+    max-width: 70%;
+    text-align: center;
+}
+
+.left-section img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    /* filter: drop-shadow(0 10px 25px rgba(0,0,0,0.2)); */
+    /* border: 0.2px solid blue; */
+    border-radius: 7px;
+
+}
 .right-section {
     flex: 1;
     background-color: #f2f2f2;

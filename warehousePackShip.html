@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Retail IMS</title>
+    <link rel="stylesheet" href="warehousePackShip.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">Cloth Retail IMS</div>
+        <button class="logout-btn"><a href="index.html">Log Out</a></button>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <a href="warehousePackShip.html" class="nav-item active">Pack & Ship Dashboard</a>
+                <a href="warehouseStaffLiveInventory.html" class="nav-item">Live Inventory</a>
+            </nav>
+        </div>
+        
+        <div class="main-content">
+            <h1>Pack & Ship Dashboard</h1>
+            
+            <div class="search-section">
+                <input type="text" class="search-input" placeholder="Search by Store, Request ID...">
+                <button class="search-btn">Search</button>
+            </div>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Store</th>
+                        <th>Items</th>
+                        <th>#Items</th>
+                        <th>Request Id</th>
+                        <th>Priority</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Store 1</td>
+                        <td>Blue Denim Jeans, White Cotton Shirts</td>
+                        <td>25</td>
+                        <td>REQ-1001</td>
+                        <td><span class="badge urgent">Urgent</span></td>
+                        <td><button class="action-btn">Pack & Ship</button></td>
+                    </tr>
+                    <tr>
+                        <td>Store 2</td>
+                        <td>Black Leather Jackets, Red Scarves</td>
+                        <td>15</td>
+                        <td>REQ-1002</td>
+                        <td><span class="badge high">High</span></td>
+                        <td><button class="action-btn">Pack & Ship</button></td>
+                    </tr>
+                    <tr>
+                        <td>Store 3</td>
+                        <td>Floral Dresses, Summer Tops</td>
+                        <td>30</td>
+                        <td>REQ-1003</td>
+                        <td><span class="badge medium">Medium</span></td>
+                        <td><button class="action-btn">Pack & Ship</button></td>
+                    </tr>
+                    <tr>
+                        <td>Store 4</td>
+                        <td>Winter Coats, Wool Sweaters</td>
+                        <td>20</td>
+                        <td>REQ-1004</td>
+                        <td><span class="badge low">Low</span></td>
+                        <td><button class="action-btn">Pack & Ship</button></td>
+                    </tr>
+                    <tr>
+                        <td>Store 5</td>
+                        <td>Cotton T-Shirts, Cargo Pants</td>
+                        <td>40</td>
+                        <td>REQ-1005</td>
+                        <td><span class="badge urgent">Urgent</span></td>
+                        <td><button class="action-btn">Pack & Ship</button></td>
+                    </tr>
+                    <tr>
+                        <td>Store 6</td>
+                        <td>Linen Shirts, Chino Shorts</td>
+                        <td>18</td>
+                        <td>REQ-1006</td>
+                        <td><span class="badge high">High</span></td>
+                        <td><button class="action-btn">Pack & Ship</button></td>
+                    </tr>
+                    <tr>
+                        <td>Store 7</td>
+                        <td>Hoodies, Joggers</td>
+                        <td>22</td>
+                        <td>REQ-1007</td>
+                        <td><span class="badge medium">Medium</span></td>
+                        <td><button class="action-btn">Pack & Ship</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="pagination">
+                <button class="page-btn">Previous</button>
+                <span class="page-info">Page 1 of 5</span>
+                <button class="page-btn">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
