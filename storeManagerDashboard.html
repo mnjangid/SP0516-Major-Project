@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Retail IMS</title>
+    <link rel="stylesheet" href="storeManagerDashboard.css">
+</head>
+<body>
+
+   
+    <div class="header">
+        <div class="header-title">Cloth Retail IMS</div>
+        <button class="logout-btn"><a href="index.html">Log Out</a></button>
+    </div>
+
+    
+    <div class="container">
+
+      
+        <div class="sidebar">
+            <nav>
+                <a href="storeManagerDashboard.html" class="nav-item active">Dashboard</a>
+                <a href="storeManagerReordering.html" class="nav-item">Reordering</a>
+                <a href="storeManagerShipmentTracking.html" class="nav-item">Shipment Tracking</a>
+                <a href="storeManagerProductManagement.html" class="nav-item">Product Management</a>
+            </nav>
+        </div>
+
+      
+        <div class="main-content">
+
+
+            <div class="chart-card">
+                <div class="chart-title">Current Stock Quantity (Category-Wise)</div>
+                <div class="chart-area">
+
+                    <div class="bar-chart-wrapper">
+
+
+                        <div class="chart-flex">
+
+             
+                            <div class="y-axis-labels">
+                                <span>400</span>
+                                <span>320</span>
+                                <span>240</span>
+                                <span>160</span>
+                                <span>80</span>
+                                <span>0</span>
+                            </div>
+
+                            <div class="chart-plot">
+                
+                                <div class="grid-overlay">
+                                    <div class="grid-line" style="top:0%"></div>
+                                    <div class="grid-line" style="top:20%"></div>
+                                    <div class="grid-line" style="top:40%"></div>
+                                    <div class="grid-line" style="top:60%"></div>
+                                    <div class="grid-line" style="top:80%"></div>
+                                    <div class="grid-line grid-line-bottom" style="top:100%"></div>
+                                </div>
+
+                            
+                                <div class="bars-row">
+                                    <div class="bar-col">
+                                        <div class="bar" style="background-color:#e74c3c; height:60%;"></div>
+                                    </div>
+                                    <div class="bar-col">
+                                        <div class="bar" style="background-color:#27ae60; height:100%;"></div>
+                                    </div>
+                                    <div class="bar-col">
+                                        <div class="bar" style="background-color:#f1c40f; height:37.5%;"></div>
+                                    </div>
+                                    <div class="bar-col">
+                                        <div class="bar" style="background-color:#2980b9; height:45%;"></div>
+                                    </div>
+                                    <div class="bar-col">
+                                        <div class="bar" style="background-color:#8e44ad; height:17.5%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            
+                        <div class="x-axis-row">
+                            <div class="x-axis-spacer"></div>
+                            <div class="x-labels">
+                                <span>Shirt</span>
+                                <span>Tshirt</span>
+                                <span>Pants</span>
+                                <span>Jeans</span>
+                                <span>Hoodies</span>
+                            </div>
+                        </div>
+
+                        <div class="x-axis-title">Quantity V/s Category</div>
+                    </div>
+
+                  
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color:#e74c3c;"></div>
+                            <span>Shirt</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color:#27ae60;"></div>
+                            <span>T-Shirt</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color:#f1c40f;"></div>
+                            <span>Pants</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color:#2980b9;"></div>
+                            <span>Jeans</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color:#8e44ad;"></div>
+                            <span>Hoodies</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+           
+            <div class="bottom-row">
+
+                <div class="low-stock-card">
+                    <h2>Low Stock Alert</h2>
+
+                    <div class="stock-alert-item">
+                        <div class="stock-icon" style="background-color:#8e44ad;"></div>
+                        <div class="stock-info">
+                            <span class="stock-name">Hoodies</span>
+                            <span class="stock-qty">70</span>
+                        </div>
+                    </div>
+
+                    <div class="stock-alert-item">
+                        <div class="stock-icon" style="background-color:#f1c40f;"></div>
+                        <div class="stock-info">
+                            <span class="stock-name">Pants</span>
+                            <span class="stock-qty">150</span>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="product-list-card">
+                    <h2>Product List</h2>
+                    <select class="category-select">
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="shirt">Shirt</option>
+                        <option value="tshirt">T-Shirt</option>
+                        <option value="pants">Pants</option>
+                        <option value="jeans">Jeans</option>
+                        <option value="hoodies">Hoodies</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

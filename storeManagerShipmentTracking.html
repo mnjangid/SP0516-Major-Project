@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Retail IMS - Shipment Tracking</title>
+    <link rel="stylesheet" href="storeManagerShipmentTracking.css">
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="header-title">Cloth Retail IMS</div>
+        <button class="logout-btn"><a href="index.html">Log Out</a></button>
+    </div>
+
+
+    <div class="container">
+
+   
+        <div class="sidebar">
+            <nav>
+                <a href="storeManagerDashboard.html" class="nav-item">Dashboard</a>
+                <a href="storeManagerReordering.html" class="nav-item">Reordering</a>
+                <a href="storeManagerShipmentTracking.html" class="nav-item active">Shipment Tracking</a>
+                <a href="storeManagerProductManagement.html" class="nav-item">Product Management</a>
+            </nav>
+            <div class="sidebar-spacer"></div>
+           
+        </div>
+
+        <div class="main-content">
+
+            <div class="tracking-card">
+
+                <h1>Shipment Tracking</h1>
+
+         
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Request Id</th>
+                                <th>Shipment Status</th>
+                                <th>Estimated Delivery</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>REQ102345</td>
+                                <td>In Transit</td>
+                                <td>Jan 28, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>REQ102346</td>
+                                <td>Delayed</td>
+                                <td>Jan 29, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>REQ102347</td>
+                                <td>In Transit</td>
+                                <td>Jan 30, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>REQ102348</td>
+                                <td>Out for Delivery</td>
+                                <td>Jan 31, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>REQ102349</td>
+                                <td>Shipped</td>
+                                <td>Jan 28, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>REQ102350</td>
+                                <td>Out for Delivery</td>
+                                <td>Jan 28, 2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="card-footer">
+                    <span class="entries-info">Showing 1 to 6 of 6 entries</span>
+
+                    <button class="refresh-btn">Refresh</button>
+
+                    <div class="pagination">
+                        <button class="page-btn">Previous</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">Next</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

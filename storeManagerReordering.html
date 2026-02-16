@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Retail IMS - Reordering</title>
+    <link rel="stylesheet" href="storeManagerReordering.css">
+</head>
+<body>
+
+   
+    <div class="header">
+        <div class="header-title">Cloth Retail IMS</div>
+        <button class="logout-btn"><a href="index.html">Log Out</a></button>
+    </div>
+
+   
+    <div class="container">
+
+        <div class="sidebar">
+            <nav>
+                <a href="storeManagerDashboard.html" class="nav-item">Dashboard</a>
+                <a href="storeManagerReordering.html" class="nav-item active">Reordering</a>
+                <a href="storeManagerShipmentTracking.html" class="nav-item">Shipment Tracking</a>
+                <a href="storeManagerProductManagement.html" class="nav-item">Product Management</a>
+            </nav>
+            <div class="sidebar-spacer"></div>
+          
+        </div>
+
+        <div class="main-content">
+
+            <div class="reorder-card">
+
+                <h1>Reorder Request</h1>
+                <p class="subtitle">View Low Stock Items, Enter the required quantities, and Submit a request to the Warehouse for replenishment</p>
+
+             
+                <div class="search-section">
+                    <input type="text" class="search-input" placeholder="Search Products">
+                    <button class="view-btn">View Items</button>
+                    <button class="search-btn">Search</button>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-heading">Low Stock Item</div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Current Stock</th>
+                                <th>Required Quantity</th>
+                                <th>Current Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hoodie Type-1</td>
+                                <td>10</td>
+                                <td><input type="number" class="qty-input" value="20"></td>
+                                <td>Low Stock</td>
+                            </tr>
+                            <tr>
+                                <td>Hoodie Type-2</td>
+                                <td>30</td>
+                                <td><input type="number" class="qty-input" value="20"></td>
+                                <td>Low Stock</td>
+                            </tr>
+                            <tr>
+                                <td>Pant Type-3</td>
+                                <td>20</td>
+                                <td><input type="number" class="qty-input" value="30"></td>
+                                <td>Low Stock</td>
+                            </tr>
+                            <tr>
+                                <td>Jeans Type-4</td>
+                                <td>5</td>
+                                <td><input type="number" class="qty-input" value="30"></td>
+                                <td>Low Stock</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+        
+                <div class="card-footer">
+                    <span class="selected-count">1 Item Selected</span>
+                    <button class="submit-btn">Submit Request</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
