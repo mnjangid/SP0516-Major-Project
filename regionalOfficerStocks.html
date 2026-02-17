@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Retail IMS - Stock Transfer Management</title>
+    <link rel="stylesheet" href="regionalOfficerStocks.css">
+</head>
+<body>
+
+    <!-- ── Header ── -->
+    <div class="header">
+        <div class="header-title">Cloth Retail IMS</div>
+        <button class="logout-btn"><a href="index.html">Log Out</a></button>
+    </div>
+
+    <!-- ── Page Body: Sidebar + Main ── -->
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <nav>
+                <a href="regionalOfficerDashboard.html" class="nav-item">Dashboard</a>
+                <a href="regionalOfficerHistoricalSales.html" class="nav-item">Historical Sales</a>
+                <a href="regionalOfficerStocks.html" class="nav-item active">Stock Transfer Management</a>
+            </nav>
+            <div class="sidebar-spacer"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <div class="transfer-card">
+
+                <h1>Stock Transfer Management</h1>
+
+                <!-- Stock Table -->
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Store A</th>
+                                <th>Store B</th>
+                                <th>Store C</th>
+                                <th>Store D</th>
+                                <th>Store E</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="category-name">Shirt</td>
+                                <td>21</td>
+                                <td>21</td>
+                                <td class="high">53</td>
+                                <td>21</td>
+                                <td class="low">07</td>
+                            </tr>
+                            <tr>
+                                <td class="category-name">T-Shirt</td>
+                                <td class="low">15</td>
+                                <td>30</td>
+                                <td>21</td>
+                                <td class="high">76</td>
+                                <td>43</td>
+                            </tr>
+                            <tr>
+                                <td class="category-name">Pant</td>
+                                <td class="low">06</td>
+                                <td>21</td>
+                                <td>25</td>
+                                <td>21</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td class="category-name">Jeans</td>
+                                <td class="low">03</td>
+                                <td class="high">100</td>
+                                <td class="high">78</td>
+                                <td>21</td>
+                                <td class="low">06</td>
+                            </tr>
+                            <tr>
+                                <td class="category-name">Hoodie</td>
+                                <td class="low">07</td>
+                                <td class="low">20</td>
+                                <td class="high">54</td>
+                                <td class="high">87</td>
+                                <td>21</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Transfer Section -->
+                <div class="transfer-section">
+                    <div class="transfer-header">
+                        <span class="transfer-col-title">From</span>
+                        <span class="transfer-col-title">Item</span>
+                        <span class="transfer-col-title">To</span>
+                    </div>
+                    <div class="transfer-selects">
+                        <select class="transfer-select">
+                            <option value="" disabled selected>Select Store</option>
+                            <option value="storeA">Store A</option>
+                            <option value="storeB">Store B</option>
+                            <option value="storeC">Store C</option>
+                            <option value="storeD">Store D</option>
+                            <option value="storeE">Store E</option>
+                        </select>
+                        <select class="transfer-select">
+                            <option value="" disabled selected>Select Item</option>
+                            <option value="shirt">Shirt</option>
+                            <option value="tshirt">T-Shirt</option>
+                            <option value="pant">Pant</option>
+                            <option value="jeans">Jeans</option>
+                            <option value="hoodie">Hoodie</option>
+                        </select>
+                        <select class="transfer-select">
+                            <option value="" disabled selected>Select Store</option>
+                            <option value="storeA">Store A</option>
+                            <option value="storeB">Store B</option>
+                            <option value="storeC">Store C</option>
+                            <option value="storeD">Store D</option>
+                            <option value="storeE">Store E</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Transfer Button -->
+                <div class="transfer-footer">
+                    <button class="transfer-btn">Transfer</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

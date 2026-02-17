@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Retail IMS - Analytics Dashboard</title>
+    <link rel="stylesheet" href="regionalOfficerDashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        /* Fix chart stability */
+        #salesChart {
+            height: 300px !important;
+            position: relative;
+        }
+        #salesChartCanvas {
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-title">Cloth Retail IMS</div>
+        <button class="logout-btn"><a href="index.html">Log Out</a></button>
+    </div>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <nav>
+                <a href="regionalOfficerDashboard.html" class="nav-item active">Dashboard</a>
+                <a href="regionalOfficerHistoricalSales.html" class="nav-item">Historical Sales</a>
+                <a href="regionalOfficerStocks.html" class="nav-item">Stock Transfer Management</a>
+            </nav>
+            <div class="sidebar-spacer"></div>
+        </div>
+
+        <div class="main-content">
+
+            <div class="top-row">
+
+                <div class="stat-cards">
+                    <div class="stat-card">
+                        <div class="stat-title">Total Sales</div>
+                        <div class="stat-value">Rs 1245300</div>
+                        <div class="stat-change positive">8.5% Increase</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">Stock Value</div>
+                        <div class="stat-value">Rs 2245600</div>
+                        <div class="stat-change positive">8.5% Increase</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">Average Daily Sales</div>
+                        <div class="stat-value">Rs 24000</div>
+                        <div class="stat-change positive">5.5% Increase</div>
+                    </div>
+                </div>
+
+                <div class="top-store-card">
+                    <div class="top-store-title">Top Performing Store</div>
+                    <div class="top-store-name">Store B</div>
+                    <div class="top-store-sales">Sales : Rs 500000</div>
+                </div>
+
+            </div>
+
+            <div class="middle-row">
+
+                <div class="chart-card">
+                    <div class="chart-card-header">
+                        <span class="chart-card-title">Sales Overview</span>
+                        <button class="filter-btn">Last 6 months</button>
+                    </div>
+                    
+                    <div class="chart-placeholder" id="salesChart">
+                        <canvas id="salesChartCanvas"></canvas>
+                    </div>
+                    
+                    <div class="chart-legend">
+                        <span class="legend-dot" style="background:#5b6abf;"></span> Store A
+                        <span class="legend-dot" style="background:#e07b7b;"></span> Store B
+                        <span class="legend-dot" style="background:#5bbfbf;"></span> Store C
+                        <span class="legend-dot" style="background:#e0b85b;"></span> Store D
+                        <span class="legend-dot" style="background:#5b8abf;"></span> Store E
+                    </div>
+                </div>
+
+                <div class="map-card">
+                    <div class="map-title">Regional Map</div>
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Jodhpur,Rajasthan,India&z=12&output=embed"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="map-label">Jodhpur , Rajasthan</div>
+                </div>
+
+            </div>
+
+            <div class="bottom-row">
+
+                <div class="comparison-card">
+                    <div class="comparison-title">Store Comparision</div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Store</th>
+                                <th>Sales</th>
+                                <th>Stock Level</th>
+                                <th>Daily Sales</th>
+                                <th>Conversion Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Store A</td>
+                                <td>3L</td>
+                                <td>72%</td>
+                                <td>10K</td>
+                                <td>15.4%</td>
+                            </tr>
+                            <tr>
+                                <td>Store B</td>
+                                <td>5L</td>
+                                <td>65%</td>
+                                <td>16K</td>
+                                <td>12.8%</td>
+                            </tr>
+                            <tr>
+                                <td>Store C</td>
+                                <td>2L</td>
+                                <td>45%</td>
+                                <td>6K</td>
+                                <td>34%</td>
+                            </tr>
+                            <tr>
+                                <td>Store D</td>
+                                <td>1.5L</td>
+                                <td>34%</td>
+                                <td>5K</td>
+                                <td>22%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="task-section">
+                        <div class="task-title">Task</div>
+                        <div class="task-item">Inventory Audit Tomorrow</div>
+                        <div class="task-item">Sales Report Due Friday</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+<!-- 
+    <script>
+        // Simple Chart Setup
+        const canvas = document.getElementById('salesChartCanvas');
+        const ctx = canvas.getContext('2d');
+
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [
+                    {
+                        label: 'Store A',
+                        data: [35, 45, 115, 50, 65, 40],
+                        backgroundColor: '#5b6abf'
+                    },
+                    {
+                        label: 'Store B',
+                        data: [50, 55, 65, 85, 95, 30],
+                        backgroundColor: '#e07b7b'
+                    },
+                    {
+                        label: 'Store C',
+                        data: [60, 75, 90, 100, 110, 100],
+                        backgroundColor: '#5bbfbf'
+                    },
+                    {
+                        label: 'Store D',
+                        data: [70, 80, 95, 105, 120, 125],
+                        backgroundColor: '#e0b85b'
+                    },
+                    {
+                        label: 'Store E',
+                        data: [40, 50, 60, 70, 85, 95],
+                        backgroundColor: '#5b8abf'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 200,
+                        ticks: {
+                            stepSize: 40
+                        }
+                    }
+                }
+            }
+        });
+    </script> -->
+
+    <script  src="regionalOfficerDashboard.js"></script>
+
+</body>
+</html>
