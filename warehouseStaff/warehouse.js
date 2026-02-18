@@ -32,7 +32,7 @@ const allPackRequests = imsData.packRequests;
 const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
 
-searchBtn.addEventListener("click",()=>{
+searchInput.addEventListener("input",()=>{
     const query = searchInput.value.toLowerCase().trim();
 
     const filterData = allPackRequests.filter((req)=>{
