@@ -13,7 +13,7 @@ document.getElementById("login-form").addEventListener("submit", (e)=>{
             break;
 
         case "Warehouse-staff":
-            window.location.href = "warehousePackShip.html";
+            window.location.href = "warehouseStaff/warehousePackShip.html";
             break;
 
         case "regional-officer":

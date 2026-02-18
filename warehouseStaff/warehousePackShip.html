@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Retail IMS</title>
+    <link rel="stylesheet" href="warehousePackShip.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">Cloth Retail IMS</div>
+        <button class="logout-btn"><a href="../index.html">Log Out</a></button>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <a href="warehousePackShip.html" class="nav-item active">Pack & Ship Dashboard</a>
+                <a href="warehouseStaffLiveInventory.html" class="nav-item">Live Inventory</a>
+            </nav>
+        </div>
+        
+        <div class="main-content">
+            <h1>Pack & Ship Dashboard</h1>
+            
+            <div class="search-section">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search by Store, Request ID, Priority...">
+                <button id="searchBtn" class="search-btn">Search</button>
+            </div>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Store</th>
+                        <th>Items</th>
+                        <th>#Items</th>
+                        <th>Request Id</th>
+                        <th>Priority</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="packShipBody">
+                    
+                </tbody>
+            </table>
+            
+            <div class="pagination">
+                <button class="page-btn">Previous</button>
+                <span class="page-info">Page 1 of 5</span>
+                <button class="page-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="warehouse.js"></script>
+
+</body>
+</html>
