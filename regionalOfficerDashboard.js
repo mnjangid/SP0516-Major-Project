@@ -54,7 +54,10 @@ window.onload = function() {
                     beginAtZero: true,
                     max: 200,
                     ticks: {
-                        stepSize: 40
+                        stepSize: 40,
+                        callback: function(value) {
+                                return value + 'k Rs';
+                            }
                     }
                 },
                 x: {

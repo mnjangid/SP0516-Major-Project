@@ -97,10 +97,11 @@
                     <div class="transfer-header">
                         <span class="transfer-col-title">From</span>
                         <span class="transfer-col-title">Item</span>
+                        <span class="transfer-col-title">Quantity</span>
                         <span class="transfer-col-title">To</span>
                     </div>
                     <div class="transfer-selects">
-                        <select class="transfer-select">
+                        <select id="from-store" class="transfer-select">
                             <option value="" disabled selected>Select Store</option>
                             <option value="storeA">Store A</option>
                             <option value="storeB">Store B</option>
@@ -108,7 +109,7 @@
                             <option value="storeD">Store D</option>
                             <option value="storeE">Store E</option>
                         </select>
-                        <select class="transfer-select">
+                        <select id="transfer-item" class="transfer-select">
                             <option value="" disabled selected>Select Item</option>
                             <option value="shirt">Shirt</option>
                             <option value="tshirt">T-Shirt</option>
@@ -116,7 +117,14 @@
                             <option value="jeans">Jeans</option>
                             <option value="hoodie">Hoodie</option>
                         </select>
-                        <select class="transfer-select">
+                        <input
+                            type="number"
+                            id="transfer-quantity"
+                            class="transfer-select"
+                            placeholder="Enter Qty"
+                            min="1"
+                        />
+                        <select id="to-store" class="transfer-select">
                             <option value="" disabled selected>Select Store</option>
                             <option value="storeA">Store A</option>
                             <option value="storeB">Store B</option>
@@ -137,5 +145,6 @@
         </div>
     </div>
 
+    <script src="regionalOfficerStocks.js"></script>
 </body>
 </html>
