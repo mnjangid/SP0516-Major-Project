@@ -1,5 +1,7 @@
 
 
+
+
 export const imsData = {
   users: [
     { role: "store-manager", name: "Store Manager" },
@@ -16,30 +18,30 @@ export const imsData = {
   ],
 
   products: [
-    { id: "hoodie1", name: "Hoodie Type 1", category: "Hoodie" },
-    { id: "hoodie2", name: "Hoodie Type 2", category: "Hoodie" },
-    { id: "hoodie3", name: "Hoodie Type 3", category: "Hoodie" },
-    { id: "hoodie4", name: "Hoodie Type 4", category: "Hoodie" },
+    { id: "hoodie1", name: "Hoodie Type 1", category: "Hoodie", quantity: "30"},
+    { id: "hoodie2", name: "Hoodie Type 2", category: "Hoodie", quantity: "100" },
+    { id: "hoodie3", name: "Hoodie Type 3", category: "Hoodie", quantity: "150" },
+    { id: "hoodie4", name: "Hoodie Type 4", category: "Hoodie", quantity: "80"},
 
-    { id: "shirt1", name: "Shirt Type 1", category: "Shirt" },
-    { id: "shirt2", name: "Shirt Type 2", category: "Shirt" },
-    { id: "shirt3", name: "Shirt Type 3", category: "Shirt" },
-    { id: "shirt4", name: "Shirt Type 4", category: "Shirt" },
+    { id: "shirt1", name: "Shirt Type 1", category: "Shirt", quantity: "500" },
+    { id: "shirt2", name: "Shirt Type 2", category: "Shirt", quantity: "100" },
+    { id: "shirt3", name: "Shirt Type 3", category: "Shirt", quantity: "30" },
+    { id: "shirt4", name: "Shirt Type 4", category: "Shirt", quantity: "30" },
 
-    { id: "jeans1", name: "Jeans Type 1", category: "Jeans" },
-    { id: "jeans2", name: "Jeans Type 2", category: "Jeans" },
-    { id: "jeans3", name: "Jeans Type 3", category: "Jeans" },
-    { id: "jeans4", name: "Jeans Type 4", category: "Jeans" },
+    { id: "jeans1", name: "Jeans Type 1", category: "Jeans", quantity: "50" },
+    { id: "jeans2", name: "Jeans Type 2", category: "Jeans", quantity: "35" },
+    { id: "jeans3", name: "Jeans Type 3", category: "Jeans", quantity: "50" },
+    { id: "jeans4", name: "Jeans Type 4", category: "Jeans", quantity: "10" },
 
-    { id: "tshirt1", name: "T-shirt Type 1", category: "T-shirt" },
-    { id: "tshirt2", name: "T-shirt Type 2", category: "T-shirt" },
-    { id: "tshirt3", name: "T-shirt Type 3", category: "T-shirt" },
-    { id: "tshirt4", name: "T-shirt Type 4", category: "T-shirt" },
+    { id: "tshirt1", name: "T-shirt Type 1", category: "T-shirt", quantity: "70" },
+    { id: "tshirt2", name: "T-shirt Type 2", category: "T-shirt", quantity: "25" },
+    { id: "tshirt3", name: "T-shirt Type 3", category: "T-shirt", quantity: "75" },
+    { id: "tshirt4", name: "T-shirt Type 4", category: "T-shirt", quantity: "70" },
 
-    { id: "pants1", name: "Pant Type 1", category: "Pants" },
-    { id: "pants2", name: "Pant Type 2", category: "Pants" },
-    { id: "pants3", name: "Pant Type 3", category: "Pants" },
-    { id: "pants4", name: "Pant Type 4", category: "Pants" }
+    { id: "pants1", name: "Pant Type 1", category: "Pants", quantity: "80" },
+    { id: "pants2", name: "Pant Type 2", category: "Pants", quantity: "38" },
+    { id: "pants3", name: "Pant Type 3", category: "Pants", quantity: "40" },
+    { id: "pants4", name: "Pant Type 4", category: "Pants", quantity: "20" }
   ],
 
   inventory: [
@@ -223,3 +225,36 @@ export const imsData = {
     }
   ]
 };
+
+// regional officer dashboard data 
+
+     
+export const labels = ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+export const datasets = [
+    {
+        label: 'Store A',
+        data: [35, 45, 115, 50, 65, 40],
+        backgroundColor: '#5b6abf'
+    },
+    {
+        label: 'Store B',
+        data: [50, 55, 65, 85, 95, 30],
+        backgroundColor: '#e07b7b'
+    },
+    {
+        label: 'Store C',
+        data: [60, 75, 90, 100, 110, 100],
+        backgroundColor: '#5bbfbf'
+    },
+    {
+        label: 'Store D',
+        data: [70, 80, 95, 105, 120, 125],
+        backgroundColor: '#e0b85b'
+    },
+    {
+        label: 'Store E',
+        data: [40, 50, 60, 70, 85, 95],
+        backgroundColor: '#5b8abf'
+    }
+];
