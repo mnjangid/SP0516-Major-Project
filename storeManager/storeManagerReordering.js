@@ -13,13 +13,9 @@ checkboxes.forEach(function (checkbox) {
         const row = this.closest("tr");
 
         if (this.checked) {
-       
             totalSelected = totalSelected + 1;
-            row.classList.add("rowSelected");
         } else {
-           
             totalSelected = totalSelected - 1;
-            row.classList.remove("rowSelected");
         }
 
         if (totalSelected === 1) {
