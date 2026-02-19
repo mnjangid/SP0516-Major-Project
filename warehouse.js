@@ -1,4 +1,4 @@
-import { imsData } from "../data/data.js";
+import { imsData } from "./data.js";
 
 
 function renderPackShipTable(data){
