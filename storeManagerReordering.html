@@ -8,45 +8,42 @@
 </head>
 <body>
 
-   
     <div class="header">
-        <div class="header-title">Cloth Retail IMS</div>
-        <button class="logout-btn"><a href="index.html">Log Out</a></button>
+        <div class="headerTitle">Cloth Retail IMS</div>
+        <button class="logoutbtn"><a href="index.html">Log Out</a></button>
     </div>
 
-   
     <div class="container">
 
         <div class="sidebar">
             <nav>
-                <a href="storeManagerDashboard.html" class="nav-item">Dashboard</a>
-                <a href="storeManagerReordering.html" class="nav-item active">Reordering</a>
-                <a href="storeManagerShipmentTracking.html" class="nav-item">Shipment Tracking</a>
-                <a href="storeManagerProductManagement.html" class="nav-item">Product Management</a>
+                <a href="storeManagerDashboard.html" class="navItem">Dashboard</a>
+                <a href="storeManagerReordering.html" class="navItem active">Reordering</a>
+                <a href="storeManagerShipmentTracking.html" class="navItem">Shipment Tracking</a>
+                <a href="storeManagerProductManagement.html" class="navItem">Product Management</a>
             </nav>
-            <div class="sidebar-spacer"></div>
-          
+            <div class="sidebarspacer"></div>
         </div>
 
-        <div class="main-content">
+        <div class="mainContent">
 
-            <div class="reorder-card">
+            <div class="reorderCard">
 
                 <h1>Reorder Request</h1>
                 <p class="subtitle">View Low Stock Items, Enter the required quantities, and Submit a request to the Warehouse for replenishment</p>
 
-             
-                <div class="search-section">
-                    <input type="text" class="search-input" placeholder="Search Products">
-                    <button class="view-btn">View Items</button>
-                    <button class="search-btn">Search</button>
+                <div class="searchsection">
+                    <input type="text" class="searchInput" placeholder="Search Products">
+                    <button class="viewbtn">View Items</button>
+                    <button class="searchBtn">Search</button>
                 </div>
 
-                <div class="table-wrapper">
-                    <div class="table-heading">Low Stock Item</div>
-                    <table class="data-table">
+                <div class="tablewrapper">
+                    <div class="tableHeading">Low Stock Items</div>
+                    <table class="datatable">
                         <thead>
                             <tr>
+                                <th>Select</th>
                                 <th>Item</th>
                                 <th>Current Stock</th>
                                 <th>Required Quantity</th>
@@ -55,43 +52,91 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td><input type="checkbox" class="rowcheckbox"></td>
                                 <td>Hoodie Type-1</td>
                                 <td>10</td>
-                                <td><input type="number" class="qty-input" value="20"></td>
+                                <td><input type="number" class="qtyInput" value="20" min="1"></td>
                                 <td>Low Stock</td>
                             </tr>
                             <tr>
+                                <td><input type="checkbox" class="rowcheckbox"></td>
                                 <td>Hoodie Type-2</td>
-                                <td>30</td>
-                                <td><input type="number" class="qty-input" value="20"></td>
+                                <td>28</td>
+                                <td><input type="number" class="qtyInput" value="20" min="1"></td>
                                 <td>Low Stock</td>
                             </tr>
                             <tr>
+                                <td><input type="checkbox" class="rowcheckbox"></td>
                                 <td>Pant Type-3</td>
                                 <td>20</td>
-                                <td><input type="number" class="qty-input" value="30"></td>
+                                <td><input type="number" class="qtyInput" value="30" min="1"></td>
                                 <td>Low Stock</td>
                             </tr>
                             <tr>
+                                <td><input type="checkbox" class="rowcheckbox"></td>
                                 <td>Jeans Type-4</td>
                                 <td>5</td>
-                                <td><input type="number" class="qty-input" value="30"></td>
+                                <td><input type="number" class="qtyInput" value="30" min="1"></td>
+                                <td>Low Stock</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="rowcheckbox"></td>
+                                <td>T-Shirt Type-5</td>
+                                <td>15</td>
+                                <td><input type="number" class="qtyInput" value="25" min="1"></td>
+                                <td>Low Stock</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="rowcheckbox"></td>
+                                <td>Jacket Type-6</td>
+                                <td>8</td>
+                                <td><input type="number" class="qtyInput" value="20" min="1"></td>
+                                <td>Low Stock</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="rowcheckbox"></td>
+                                <td>Shorts Type-7</td>
+                                <td>22</td>
+                                <td><input type="number" class="qtyInput" value="30" min="1"></td>
+                                <td>Low Stock</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="rowcheckbox"></td>
+                                <td>Sweater Type-8</td>
+                                <td>12</td>
+                                <td><input type="number" class="qtyInput" value="25" min="1"></td>
+                                <td>Low Stock</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="rowcheckbox"></td>
+                                <td>Jogger Type-9</td>
+                                <td>18</td>
+                                <td><input type="number" class="qtyInput" value="20" min="1"></td>
+                                <td>Low Stock</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="rowcheckbox"></td>
+                                <td>Vest Type-10</td>
+                                <td>25</td>
+                                <td><input type="number" class="qtyInput" value="30" min="1"></td>
                                 <td>Low Stock</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-        
-                <div class="card-footer">
-                    <span class="selected-count">1 Item Selected</span>
-                    <button class="submit-btn">Submit Request</button>
+                <div class="cardfooter">
+                    <span class="selectedcount" id="selectedCount">0 Items Selected</span>
+                    <button id="bttn" class="submitBtn">Submit Request</button>
                 </div>
 
             </div>
 
         </div>
     </div>
+
+  
+    <script type="module" src="storeManagerReordering.js"></script>
 
 </body>
 </html>
