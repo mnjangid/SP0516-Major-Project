@@ -1,4 +1,4 @@
-import { imsData } from "./data.js";
+import { imsData } from "../data/data.js";
 
 
 function renderPackShipTable(data){
@@ -15,9 +15,10 @@ function renderPackShipTable(data){
             <td>${req.items.join(", ")}</td>
             <td>${totalItems}</td>
             <td>${req.requestId}</td>
-            <td>${req.priority}</td>
             <td>
-                <button class="action-btn">Pack & Ship</button>
+            <span class="badge ${req.priority.toLowerCase()}">${req.priority}</td>
+            <td>
+                <button class="action-btn" onclick="packShip('${req.requestId}')">Pack & Ship</button>
             </td>
         `;
 
@@ -28,6 +29,7 @@ function renderPackShipTable(data){
 
 
 const allPackRequests = imsData.packRequests;
+const packRequests = allPackRequests;
 
 const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
@@ -44,8 +46,31 @@ searchInput.addEventListener("input",()=>{
     renderPackShipTable(filterData);
 })
 
-renderPackShipTable(imsData.packRequests);
+// renderPackShipTable(imsData.packRequests);
 
 
-// live Inventory ke liye code ->
+
+window.packShip = function (requestId) {
+  // index find kr rha h
+  const index = packRequests.findIndex(
+    (req) => req.requestId === requestId
+  );
+
+  if (index === -1) {
+    alert("Request not found");
+    return;
+  }
+
+  // alert popup
+  alert(`Request ${requestId} is packed and shipped`);
+
+  // remove row from the table
+  packRequests.splice(index, 1);
+
+  // re-render table
+  renderPackShipTable(packRequests);
+};
+renderPackShipTable(packRequests);
+
+// live Inventory ke liye code
 

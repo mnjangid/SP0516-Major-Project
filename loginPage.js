@@ -1,26 +1,29 @@
-document.getElementById("login-form").addEventListener("submit", (e)=>{
+
+
+document.getElementById("loginform").addEventListener("submit", (e) => {
     e.preventDefault();
 
     const role = document.getElementById("role").value;
-    if(!role){
-            alert("Please select a role");
-            return;
+
+    if (!role) {
+        alert("Please select a role");
+        return;
     }
-    switch(role){
-        
-        case "store-manager":
-            window.location.href = "store-manager.html"; // link file ke naam ke hisaab se change bhi ho skti h 
+
+    switch (role) {
+        case "storemanager":
+            window.location.href = "storeManager/storeManagerDashboard.html";
             break;
 
-        case "Warehouse-staff":
-            window.location.href = "warehouseStaff/warehousePackShip.html";
+        case "warehousestaff":
+            window.location.href = "warehousestaff/warehousePackShip.html";
             break;
 
-        case "regional-officer":
-            window.location.href = "regionalDashboard.html";
+        case "regionalmanager":
+            window.location.href = "regionalOfficer/regionalOfficerDashboard.html";
             break;
 
-        default: 
+        default:
             alert("Invalid role selected");
     }
 });

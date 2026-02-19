@@ -1,4 +1,4 @@
-import { imsData } from "./data/data.js";
+import { imsData } from "../data/data.js";
 
 const select = document.querySelector('.categorySelect');
 const tableContainer = document.getElementById('productTableContainer');
@@ -20,7 +20,7 @@ function renderTable(products) {
     }
 
     let tableHTML = `
-        <table border="1" cellpadding="10" cellspacing="0" style="width:100%; margin-top:15px; height:250px">
+        <table border="1" cellpadding="10" cellspacing="0" style="width:100%;">
             <thead>
                 <tr>
                     <th>Product Name</th>
@@ -33,7 +33,7 @@ function renderTable(products) {
     products.forEach(product => {
         tableHTML += `
             <tr >
-                <td">${product.name}</td>
+                <td>${product.name}</td>
                 <td>${product.quantity}</td>
             </tr>
         `;

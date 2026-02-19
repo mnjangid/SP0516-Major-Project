@@ -1,5 +1,4 @@
-
-    body {
+body {
         margin: 0;
         padding: 0;
         font-family: 'Poppins', sans-serif;
@@ -11,7 +10,7 @@
     }
 
     .card {
-        background-color: #0b090a;
+        background-color: #afe1eec8;
         padding: 40px;
         border-radius: 10px;
         width: 90%;
@@ -54,7 +53,7 @@
         border-radius: 12px;
         transition: all 0.4s ease;
         background-color: #4e4e50;
-        color: rgba(36, 45, 55, 0.593);
+        color: rgba(245, 247, 249, 0.593);
         cursor: pointer;
     }
 
