@@ -1,4 +1,3 @@
-
 const lowStock = 20;
 const highStock = 50;
 
@@ -18,15 +17,11 @@ const itemRow = {
     hoodie: 4,
 };
 
-
-
 function getStock(row, column) {
     const cell = row.cells[column];
     if (!cell) return 0;
     return parseInt(cell.textContent.trim(), 10);
 }
-
-
 
 function setStock(cell, newAmount) {
 
@@ -45,19 +40,15 @@ function setStock(cell, newAmount) {
     }
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
 
-
-    const fromStore = document.getElementById("from-store");
-    const selectedItem = document.getElementById("transfer-item");
-    const toStore = document.getElementById("to-store");
-    const quantity = document.getElementById("transfer-quantity");
-    const transferBtn = document.querySelector(".transfer-btn");
-
+    const fromStore = document.getElementById("fromStore");
+    const selectedItem = document.getElementById("transferItem");
+    const toStore = document.getElementById("toStore");
+    const quantity = document.getElementById("transferQuantity");
+    const transferBtn = document.querySelector(".transferbtn");
 
     transferBtn.addEventListener("click", function () {
-
 
         const from = fromStore.value;
         const item = selectedItem.value;
@@ -85,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        const table = document.querySelector(".data-table tbody");
+        const table = document.querySelector(".datatable tbody");
         const row = table.rows[itemRow[item]];
         const fromCol = storeColumn[from];
         const toCol = storeColumn[to];
@@ -96,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const fromAmount = getStock(row, fromCol);
         const toAmount = getStock(row, toCol);
 
-
         if (qty > fromAmount) {
             alert("Not enough stock! " +
                 fromStore.options[fromStore.selectedIndex].text +
@@ -105,11 +95,9 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-
         const fromName = fromStore.options[fromStore.selectedIndex].text;
         const itemName = selectedItem.options[selectedItem.selectedIndex].text;
         const toName = toStore.options[toStore.selectedIndex].text;
-
 
         setStock(fromCell, fromAmount - qty);
         setStock(toCell, toAmount + qty);
@@ -118,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
         selectedItem.value = "";
         toStore.value = "";
         quantity.value = "";
-
 
         alert("Done! Transferred " + qty + " unit(s) of " + itemName +
             " from " + fromName + " to " + toName + ".");

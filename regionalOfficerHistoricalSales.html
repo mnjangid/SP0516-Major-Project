@@ -6,95 +6,92 @@
     <title>Cloth Retail IMS - Historical Sales</title>
     <link rel="stylesheet" href="regionalOfficerHistoricalSales.css">
     
-    <!-- Include Chart.js -->
+   
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <!-- Include Chart.js Data Labels Plugin -->
+   
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
 </head>
 <body>
 
-    <!-- ── Header ── -->
+   
     <div class="header">
-        <div class="header-title">Cloth Retail IMS</div>
-        <button class="logout-btn"><a href="index.html">Log Out</a></button>
+        <div class="headerTitle">Cloth Retail IMS</div>
+        <button class="logoutbtn"><a href="index.html">Log Out</a></button>
     </div>
 
-    <!-- ── Page Body: Sidebar + Main ── -->
     <div class="container">
 
-        <!-- Sidebar -->
+       
         <div class="sidebar">
             <nav>
-                <a href="regionalOfficerDashboard.html" class="nav-item">Dashboard</a>
-                <a href="regionalOfficerHistoricalSales.html" class="nav-item active">Historical Sales</a>
-                <a href="regionalOfficerStocks.html" class="nav-item">Stock Transfer Management</a>
+                <a href="regionalOfficerDashboard.html" class="navItem">Dashboard</a>
+                <a href="regionalOfficerHistoricalSales.html" class="navItem active">Historical Sales</a>
+                <a href="regionalOfficerStocks.html" class="navItem">Stock Transfer Management</a>
             </nav>
-            <div class="sidebar-spacer"></div>
+            <div class="sidebarspacer"></div>
         </div>
 
-        <!-- Main Content -->
-        <div class="main-content">
+    
+        <div class="mainContent">
 
-            <!--  Sales Trend Overview  -->
-            <div class="chart-card full-width">
-                <div class="chart-card-header">
-                    <span class="chart-card-title">Sales Trend Overview</span>
-                    <button class="filter-btn">Last 12 Months</button>
+            <div class="chartCard fullwidth">
+                <div class="chartCardHeader">
+                    <span class="chartCardTitle">Sales Trend Overview</span>
+                    <button class="filterbtn">Last 12 Months</button>
                 </div>
                 
-                <div class="chart-placeholder" id="trends">
+                <div class="chartplaceholder" id="trends">
                     <canvas id="salesTrendChart"></canvas>
                 </div>
-                <div class="chart-legend">
-                    <span><span class="legend-dot" style="background:#7b8dd4;"></span> Actual</span>
-                    <span><span class="legend-dot" style="background:#e8a598;"></span> Forecasted</span>
+                <div class="chartlegend">
+                    <span><span class="legendDot" style="background:#7b8dd4;"></span> Actual</span>
+                    <span><span class="legendDot" style="background:#e8a598;"></span> Forecasted</span>
                 </div>
             </div>
 
-            <!-- ── Bottom Row: 3 Charts ── -->
-            <div class="bottom-row">
+         
+            <div class="bottomrow">
 
-                <!-- Regional Sales Performance  -->
-                <div class="chart-card">
-                    <div class="chart-card-title">Regional Sales Performance</div>
+                <div class="chartCard">
+                    <div class="chartCardTitle">Regional Sales Performance</div>
                     
-                    <div class="chart-placeholder">
+                    <div class="chartplaceholder">
                         <canvas id="regionalSalesChart"></canvas>
                     </div>
-                    <div class="chart-legend">
-                        <span><span class="legend-dot" style="background:#4a56c8;"></span> Store A</span>
-                        <span><span class="legend-dot" style="background:#e74c3c;"></span> Store B</span>
-                        <span><span class="legend-dot" style="background:#5bc8c8;"></span> Store C</span>
-                        <span><span class="legend-dot" style="background:#e8a030;"></span> Store D</span>
-                        <span><span class="legend-dot" style="background:#3498db;"></span> Store E</span>
+                    <div class="chartlegend">
+                        <span><span class="legendDot" style="background:#4a56c8;"></span> Store A</span>
+                        <span><span class="legendDot" style="background:#e74c3c;"></span> Store B</span>
+                        <span><span class="legendDot" style="background:#5bc8c8;"></span> Store C</span>
+                        <span><span class="legendDot" style="background:#e8a030;"></span> Store D</span>
+                        <span><span class="legendDot" style="background:#3498db;"></span> Store E</span>
                     </div>
                 </div>
 
-                <!--Category Breakdown -->
-                <div class="chart-card">
-                    <div class="chart-card-title">Category Breakdown</div>
+               
+                <div class="chartCard">
+                    <div class="chartCardTitle">Category Breakdown</div>
                 
-                    <div class="chart-placeholder">
+                    <div class="chartplaceholder">
                         <canvas id="categoryBreakdownChart"></canvas>
                     </div>
-                    <div class="chart-legend">
-                        <span><span class="legend-dot" style="background:#3498db;"></span> TShirt</span>
-                        <span><span class="legend-dot" style="background:#e74c3c;"></span> Shirt</span>
-                        <span><span class="legend-dot" style="background:#5bc8c8;"></span> Pants</span>
-                        <span><span class="legend-dot" style="background:#e8a030;"></span> Jeans</span>
-                        <span><span class="legend-dot" style="background:#4a56c8;"></span> Hoodie</span>
+                    <div class="chartlegend">
+                        <span><span class="legendDot" style="background:#3498db;"></span> TShirt</span>
+                        <span><span class="legendDot" style="background:#e74c3c;"></span> Shirt</span>
+                        <span><span class="legendDot" style="background:#5bc8c8;"></span> Pants</span>
+                        <span><span class="legendDot" style="background:#e8a030;"></span> Jeans</span>
+                        <span><span class="legendDot" style="background:#4a56c8;"></span> Hoodie</span>
                     </div>
                 </div>
 
-                <!-- Q4 Forecast (Bar chart) -->
-                <div class="chart-card">
-                    <div class="chart-card-title">Q4 Forecast</div>
+       
+                <div class="chartCard">
+                    <div class="chartCardTitle">Q4 Forecast</div>
                     
-                    <div class="chart-placeholder">
+                    <div class="chartplaceholder">
                         <canvas id="q4ForecastChart"></canvas>
                     </div>
-                    <div class="chart-legend">
-                        <span><span class="legend-dot" style="background:#7b8dd4;"></span> Q4</span>
+                    <div class="chartlegend">
+                        <span><span class="legendDot" style="background:#7b8dd4;"></span> Q4</span>
                     </div>
                 </div>
 
@@ -103,20 +100,14 @@
         </div>
     </div>
 
-
-    
     <script>
 
-        // ── REGISTER the DataLabels plugin globally (required for Chart.js v4) ──
         Chart.register(ChartDataLabels);
 
-      
         const salesTrendCanvas = document.getElementById('salesTrendChart').getContext('2d');
-        
-       
+
         const months = ['Jan', 'Feb', 'Mar', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        
-       
+
         const actualSalesData = [550, 420, 330, 600, 480, 780, 680, 870, 1020, 650, 720, 850];
         
         const forecastedSalesData = [400, 800, 600, 750, 1000, 900, 1050, 1230, 920, 950, 1020, 1000];
@@ -152,14 +143,14 @@
                         display: false
                     },
                     datalabels: {
-                        display: false   // keep hidden for line chart
+                        display: false   
                     }
                 },
                 scales: {
                     y: {
                         beginAtZero: true,
                         max: 1600,
-                         ticks: {
+                        ticks: {
                             callback: function(value) {
                                 return value + 'k Rs';
                             }
@@ -169,16 +160,16 @@
             }
         });
 
-    
-        // 2. REGIONAL SALES PERFORMANCE 
-        
+
+      
+
         const regionalSalesCanvas = document.getElementById('regionalSalesChart').getContext('2d');
-        
+
         const storeNames = ['Store E', 'Store A', 'Store D', 'Store C', 'Store B'];
         const storeSalesData = [100000, 300000, 50000, 200000, 600000];
         const storeColors = ['#3498db', '#4a56c8', '#e8a030', '#5bc8c8', '#e74c3c'];
 
-        // Center-text plugin for the doughnut total
+      
         const doughnutCenterText = {
             id: 'doughnutCenterText',
             afterDraw(chart) {
@@ -213,7 +204,7 @@
                 maintainAspectRatio: false,
                 cutout: '55%',
                 layout: {
-                    padding: 40   // extra room for outside labels
+                    padding: 40
                 },
                 plugins: {
                     legend: {
@@ -237,11 +228,11 @@
             }
         });
 
-        
-        // 3. CATEGORY BREAKDOWN 
-        
+
+      
+
         const categoryCanvas = document.getElementById('categoryBreakdownChart').getContext('2d');
-        
+
         const categoryNames = ['TShirt', 'Shirt', 'Pants', 'Jeans', 'Hoodie'];
         const categorySalesData = [40000, 30000, 25000, 20000, 20000];
         const categoryColors = ['#3498db', '#e74c3c', '#5bc8c8', '#e8a030', '#4a56c8'];
@@ -260,7 +251,7 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 layout: {
-                    padding: 40   // extra room for outside labels
+                    padding: 40
                 },
                 plugins: {
                     legend: {
@@ -284,11 +275,11 @@
             }
         });
 
-        
-        // 4. Q4 FORECAST 
-        
+
+
+
         const q4ForecastCanvas = document.getElementById('q4ForecastChart').getContext('2d');
-        
+
         const q4StoreNames = ['Store A', 'Store B', 'Store C', 'Store D', 'Store E'];
         const q4ForecastData = [180000, 80000, 60000, 50000, 40000];
 

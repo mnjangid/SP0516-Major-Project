@@ -1,12 +1,10 @@
-import { labels , datasets } from "./regionalOfficerDashboardData.js";
+import { labels, datasets } from "./regionalOfficerDashboardData.js";
 
 window.onload = function() {
-    
 
     const canvas = document.getElementById('salesChartCanvas');
     const ctx = canvas.getContext('2d');
 
-    
     const chart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -31,8 +29,8 @@ window.onload = function() {
                     ticks: {
                         stepSize: 40,
                         callback: function(value) {
-                                return value + 'k Rs';
-                            }
+                            return value + 'k Rs';
+                        }
                     }
                 },
                 x: {
@@ -43,7 +41,5 @@ window.onload = function() {
             }
         }
     });
-    
-};
 
-root.append(chart);
+};

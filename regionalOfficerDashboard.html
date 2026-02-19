@@ -21,75 +21,75 @@
 <body>
 
     <div class="header">
-        <div class="header-title">Cloth Retail IMS</div>
-        <button class="logout-btn"><a href="index.html">Log Out</a></button>
+        <div class="headerTitle">Cloth Retail IMS</div>
+        <button class="logoutbtn"><a href="index.html">Log Out</a></button>
     </div>
 
     <div class="container">
 
         <div class="sidebar">
             <nav>
-                <a href="regionalOfficerDashboard.html" class="nav-item active">Dashboard</a>
-                <a href="regionalOfficerHistoricalSales.html" class="nav-item">Historical Sales</a>
-                <a href="regionalOfficerStocks.html" class="nav-item">Stock Transfer Management</a>
+                <a href="regionalOfficerDashboard.html" class="navItem active">Dashboard</a>
+                <a href="regionalOfficerHistoricalSales.html" class="navItem">Historical Sales</a>
+                <a href="regionalOfficerStocks.html" class="navItem">Stock Transfer Management</a>
             </nav>
-            <div class="sidebar-spacer"></div>
+            <div class="sidebarspacer"></div>
         </div>
 
-        <div class="main-content">
+        <div class="mainContent">
 
-            <div class="top-row">
+            <div class="toprow">
 
-                <div class="stat-cards">
-                    <div class="stat-card">
-                        <div class="stat-title">Total Sales</div>
-                        <div class="stat-value">Rs 1245300</div>
-                        <div class="stat-change positive">8.5% Increase</div>
+                <div class="statCards">
+                    <div class="statcard">
+                        <div class="stattitle">Total Sales</div>
+                        <div class="statValue">Rs 1245300</div>
+                        <div class="statchange positive">8.5% Increase</div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-title">Stock Value</div>
-                        <div class="stat-value">Rs 2245600</div>
-                        <div class="stat-change positive">8.5% Increase</div>
+                    <div class="statcard">
+                        <div class="stattitle">Stock Value</div>
+                        <div class="statValue">Rs 2245600</div>
+                        <div class="statchange positive">8.5% Increase</div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-title">Average Daily Sales</div>
-                        <div class="stat-value">Rs 24000</div>
-                        <div class="stat-change positive">5.5% Increase</div>
+                    <div class="statcard">
+                        <div class="stattitle">Average Daily Sales</div>
+                        <div class="statValue">Rs 24000</div>
+                        <div class="statchange positive">5.5% Increase</div>
                     </div>
                 </div>
 
-                <div class="top-store-card">
-                    <div class="top-store-title">Top Performing Store</div>
-                    <div class="top-store-name">Store B</div>
-                    <div class="top-store-sales">Sales : Rs 500000</div>
+                <div class="topStoreCard">
+                    <div class="topStoreTitle">Top Performing Store</div>
+                    <div class="topStoreName">Store B</div>
+                    <div class="topStoreSales">Sales : Rs 500000</div>
                 </div>
 
             </div>
 
-            <div class="middle-row">
+            <div class="middlerow">
 
-                <div class="chart-card">
-                    <div class="chart-card-header">
-                        <span class="chart-card-title">Sales Overview</span>
-                        <button class="filter-btn">Last 6 months</button>
+                <div class="chartCard">
+                    <div class="chartCardHeader">
+                        <span class="chartCardTitle">Sales Overview</span>
+                        <button class="filterbtn">Last 6 months</button>
                     </div>
                     
-                    <div class="chart-placeholder" id="salesChart">
+                    <div class="chartplaceholder" id="salesChart">
                         <canvas id="salesChartCanvas"></canvas>
                     </div>
                     
-                    <div class="chart-legend">
-                        <span class="legend-dot" style="background:#5b6abf;"></span> Store A
-                        <span class="legend-dot" style="background:#e07b7b;"></span> Store B
-                        <span class="legend-dot" style="background:#5bbfbf;"></span> Store C
-                        <span class="legend-dot" style="background:#e0b85b;"></span> Store D
-                        <span class="legend-dot" style="background:#5b8abf;"></span> Store E
+                    <div class="chartlegend">
+                        <span class="legendDot" style="background:#5b6abf;"></span> Store A
+                        <span class="legendDot" style="background:#e07b7b;"></span> Store B
+                        <span class="legendDot" style="background:#5bbfbf;"></span> Store C
+                        <span class="legendDot" style="background:#e0b85b;"></span> Store D
+                        <span class="legendDot" style="background:#5b8abf;"></span> Store E
                     </div>
                 </div>
 
-                <div class="map-card">
-                    <div class="map-title">Regional Map</div>
-                    <div class="map-wrapper">
+                <div class="mapcard">
+                    <div class="maptitle">Regional Map</div>
+                    <div class="mapwrapper">
                         <iframe
                             src="https://maps.google.com/maps?q=Jodhpur,Rajasthan,India&z=12&output=embed"
                             width="100%"
@@ -100,16 +100,16 @@
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-                    <div class="map-label">Jodhpur , Rajasthan</div>
+                    <div class="maplabel">Jodhpur , Rajasthan</div>
                 </div>
 
             </div>
 
-            <div class="bottom-row">
+            <div class="bottomrow">
 
-                <div class="comparison-card">
-                    <div class="comparison-title">Store Comparision</div>
-                    <table class="data-table">
+                <div class="comparisonCard">
+                    <div class="comparisonTitle">Store Comparision</div>
+                    <table class="datatable">
                         <thead>
                             <tr>
                                 <th>Store</th>
@@ -141,14 +141,14 @@
                                 <td>6K</td>
                                 <td>34%</td>
                             </tr>
-                               <tr>
+                            <tr>
                                 <td>Store D</td>
                                 <td>1.5L</td>
                                 <td>24%</td>
                                 <td>5K</td>
                                 <td>22%</td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <td>Store E</td>
                                 <td>2.5L</td>
                                 <td>44%</td>
@@ -158,10 +158,10 @@
                         </tbody>
                     </table>
 
-                    <div class="task-section">
-                        <div class="task-title">Task</div>
-                        <div class="task-item">Inventory Audit Tomorrow</div>
-                        <div class="task-item">Sales Report Due Friday</div>
+                    <div class="tasksection">
+                        <div class="taskTitle">Task</div>
+                        <div class="taskitem">Inventory Audit Tomorrow</div>
+                        <div class="taskitem">Sales Report Due Friday</div>
                     </div>
                 </div>
 
@@ -169,7 +169,6 @@
 
         </div>
     </div>
-
 
     <script type="module" src="regionalOfficerDashboard.js"></script>
 

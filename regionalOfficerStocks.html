@@ -8,35 +8,30 @@
 </head>
 <body>
 
-    <!-- ── Header ── -->
     <div class="header">
-        <div class="header-title">Cloth Retail IMS</div>
-        <button class="logout-btn"><a href="index.html">Log Out</a></button>
+        <div class="headerTitle">Cloth Retail IMS</div>
+        <button class="logoutbtn"><a href="index.html">Log Out</a></button>
     </div>
 
-    <!-- ── Page Body: Sidebar + Main ── -->
     <div class="container">
 
-        <!-- Sidebar -->
         <div class="sidebar">
             <nav>
-                <a href="regionalOfficerDashboard.html" class="nav-item">Dashboard</a>
-                <a href="regionalOfficerHistoricalSales.html" class="nav-item">Historical Sales</a>
-                <a href="regionalOfficerStocks.html" class="nav-item active">Stock Transfer Management</a>
+                <a href="regionalOfficerDashboard.html" class="navItem">Dashboard</a>
+                <a href="regionalOfficerHistoricalSales.html" class="navItem">Historical Sales</a>
+                <a href="regionalOfficerStocks.html" class="navItem active">Stock Transfer Management</a>
             </nav>
-            <div class="sidebar-spacer"></div>
+            <div class="sidebarspacer"></div>
         </div>
 
-        <!-- Main Content -->
-        <div class="main-content">
+        <div class="mainContent">
 
-            <div class="transfer-card">
+            <div class="transferCard">
 
                 <h1>Stock Transfer Management</h1>
 
-                <!-- Stock Table -->
-                <div class="table-wrapper">
-                    <table class="data-table">
+                <div class="tablewrapper">
+                    <table class="datatable">
                         <thead>
                             <tr>
                                 <th>Category</th>
@@ -49,7 +44,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="category-name">Shirt</td>
+                                <td class="categoryname">Shirt</td>
                                 <td>21</td>
                                 <td>21</td>
                                 <td class="high">53</td>
@@ -57,7 +52,7 @@
                                 <td class="low">07</td>
                             </tr>
                             <tr>
-                                <td class="category-name">T-Shirt</td>
+                                <td class="categoryname">T-Shirt</td>
                                 <td class="low">15</td>
                                 <td>30</td>
                                 <td>21</td>
@@ -65,7 +60,7 @@
                                 <td>43</td>
                             </tr>
                             <tr>
-                                <td class="category-name">Pant</td>
+                                <td class="categoryname">Pant</td>
                                 <td class="low">06</td>
                                 <td>21</td>
                                 <td>25</td>
@@ -73,7 +68,7 @@
                                 <td>21</td>
                             </tr>
                             <tr>
-                                <td class="category-name">Jeans</td>
+                                <td class="categoryname">Jeans</td>
                                 <td class="low">03</td>
                                 <td class="high">100</td>
                                 <td class="high">78</td>
@@ -81,7 +76,7 @@
                                 <td class="low">06</td>
                             </tr>
                             <tr>
-                                <td class="category-name">Hoodie</td>
+                                <td class="categoryname">Hoodie</td>
                                 <td class="low">07</td>
                                 <td class="low">20</td>
                                 <td class="high">54</td>
@@ -92,16 +87,15 @@
                     </table>
                 </div>
 
-                <!-- Transfer Section -->
-                <div class="transfer-section">
-                    <div class="transfer-header">
-                        <span class="transfer-col-title">From</span>
-                        <span class="transfer-col-title">Item</span>
-                        <span class="transfer-col-title">Quantity</span>
-                        <span class="transfer-col-title">To</span>
+                <div class="transferSection">
+                    <div class="transferHeader">
+                        <span class="transferColTitle">From</span>
+                        <span class="transferColTitle">Item</span>
+                        <span class="transferColTitle">Quantity</span>
+                        <span class="transferColTitle">To</span>
                     </div>
-                    <div class="transfer-selects">
-                        <select id="from-store" class="transfer-select">
+                    <div class="transferSelects">
+                        <select id="fromStore" class="transferSelect">
                             <option value="" disabled selected>Select Store</option>
                             <option value="storeA">Store A</option>
                             <option value="storeB">Store B</option>
@@ -109,7 +103,7 @@
                             <option value="storeD">Store D</option>
                             <option value="storeE">Store E</option>
                         </select>
-                        <select id="transfer-item" class="transfer-select">
+                        <select id="transferItem" class="transferSelect">
                             <option value="" disabled selected>Select Item</option>
                             <option value="shirt">Shirt</option>
                             <option value="tshirt">T-Shirt</option>
@@ -119,12 +113,12 @@
                         </select>
                         <input
                             type="number"
-                            id="transfer-quantity"
-                            class="transfer-select"
+                            id="transferQuantity"
+                            class="transferSelect"
                             placeholder="Enter Qty"
                             min="1"
                         />
-                        <select id="to-store" class="transfer-select">
+                        <select id="toStore" class="transferSelect">
                             <option value="" disabled selected>Select Store</option>
                             <option value="storeA">Store A</option>
                             <option value="storeB">Store B</option>
@@ -135,9 +129,8 @@
                     </div>
                 </div>
 
-                <!-- Transfer Button -->
-                <div class="transfer-footer">
-                    <button class="transfer-btn">Transfer</button>
+                <div class="transferFooter">
+                    <button class="transferbtn">Transfer</button>
                 </div>
 
             </div>
