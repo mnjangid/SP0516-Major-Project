@@ -46,126 +46,132 @@ export const imsData = {
     {
       storeId: "storeA",
       items: [
-        { productId: "hoodie1", quantity: 180 },
-        { productId: "hoodie2", quantity: 200 },
-        { productId: "hoodie3", quantity: 80 },
-        { productId: "hoodie4", quantity: 70 },
-        { productId: "shirt1", quantity: 70 },
-        { productId: "shirt2", quantity: 100 },
-        { productId: "shirt3", quantity: 50 },
-        { productId: "shirt4", quantity: 40 },
-        { productId: "jeans1", quantity: 80 },
-        { productId: "jeans2", quantity: 70 },
-        { productId: "jeans3", quantity: 60 },
-        { productId: "jeans4", quantity: 50 },
-        { productId: "tshirt1", quantity: 110 },
-        { productId: "tshirt2", quantity: 100 },
-        { productId: "tshirt3", quantity: 30 },
-        { productId: "tshirt4", quantity: 40 },
-        { productId: "pants1", quantity: 20 },
-        { productId: "pants2", quantity: 75 },
-        { productId: "pants3", quantity: 0 },
-        { productId: "pants4", quantity: 820 }
+        { productId: "hoodie1", quantity: 180, inbound:40},
+        { productId: "hoodie2", quantity: 200, inbound:40},
+        { productId: "hoodie3", quantity: 80, inbound:40},
+        { productId: "hoodie4", quantity: 70, inbound:40},
+        { productId: "shirt1", quantity: 70, inbound:40},
+        { productId: "shirt2", quantity: 100, inbound:40 },
+        { productId: "shirt3", quantity: 50, inbound:40 },
+        { productId: "shirt4", quantity: 40, inbound:40 },
+
+
+
+
+
+    
+        { productId: "jeans1", quantity: 80, inbound:40 },
+        { productId: "jeans2", quantity: 70, inbound:40 },
+        { productId: "jeans3", quantity: 60, inbound:40 },
+        { productId: "jeans4", quantity: 50, inbound:40 },
+        { productId: "tshirt1", quantity: 110, inbound:40 },
+        { productId: "tshirt2", quantity: 100, inbound:40 },
+        { productId: "tshirt3", quantity: 30, inbound:40 },
+        { productId: "tshirt4", quantity: 40, inbound:40 },
+        { productId: "pants1", quantity: 20 , inbound:40},
+        { productId: "pants2", quantity: 75, inbound:40 },
+        { productId: "pants3", quantity: 0, inbound:40 },
+        { productId: "pants4", quantity: 820, inbound:40 }
       ]
     },
 
     {
       storeId: "storeB",
       items: [
-        { productId: "hoodie1", quantity: 120 },
-        { productId: "hoodie2", quantity: 110 },
-        { productId: "hoodie3", quantity: 110 },
-        { productId: "hoodie4", quantity: 80 },
-        { productId: "shirt1", quantity: 80 },
-        { productId: "shirt2", quantity: 70 },
-        { productId: "shirt3", quantity: 60 },
-        { productId: "shirt4", quantity: 50 },
-        { productId: "jeans1", quantity: 70 },
-        { productId: "jeans2", quantity: 140 },
-        { productId: "jeans3", quantity: 130 },
-        { productId: "jeans4", quantity: 40 },
-        { productId: "tshirt1", quantity: 120 },
-        { productId: "tshirt2", quantity: 110 },
-        { productId: "tshirt3", quantity: 130 },
-        { productId: "tshirt4", quantity: 10 },
-        { productId: "pants1", quantity: 20 },
-        { productId: "pants2", quantity: 75 },
-        { productId: "pants3", quantity: 0 },
-        { productId: "pants4", quantity: 820 }
+        { productId: "hoodie1", quantity: 120 , inbound:40},
+        { productId: "hoodie2", quantity: 110 , inbound:40},
+        { productId: "hoodie3", quantity: 110 , inbound:40},
+        { productId: "hoodie4", quantity: 80, inbound:40 },
+        { productId: "shirt1", quantity: 80, inbound:40 },
+        { productId: "shirt2", quantity: 70, inbound:40 },
+        { productId: "shirt3", quantity: 60, inbound:40 },
+        { productId: "shirt4", quantity: 50, inbound:40 },
+        { productId: "jeans1", quantity: 70, inbound:40 },
+        { productId: "jeans2", quantity: 140, inbound:40 },
+        { productId: "jeans3", quantity: 130, inbound:40 },
+        { productId: "jeans4", quantity: 40, inbound:40 },
+        { productId: "tshirt1", quantity: 120, inbound:40 },
+        { productId: "tshirt2", quantity: 110, inbound:40 },
+        { productId: "tshirt3", quantity: 130, inbound:40 },
+        { productId: "tshirt4", quantity: 10 , inbound:40},
+        { productId: "pants1", quantity: 20, inbound:40 },
+        { productId: "pants2", quantity: 75, inbound:40 },
+        { productId: "pants3", quantity: 0 , inbound:40},
+        { productId: "pants4", quantity: 820, inbound:40 }
       ]
     },
 
     {
       storeId: "storeC",
       items: [
-        { productId: "hoodie1", quantity: 180 },
-        { productId: "hoodie2", quantity: 200 },
-        { productId: "hoodie3", quantity: 80 },
-        { productId: "hoodie4", quantity: 70 },
-        { productId: "shirt1", quantity: 70 },
-        { productId: "shirt2", quantity: 100 },
-        { productId: "shirt3", quantity: 50 },
-        { productId: "shirt4", quantity: 40 },
-        { productId: "jeans1", quantity: 80 },
-        { productId: "jeans2", quantity: 70 },
-        { productId: "jeans3", quantity: 60 },
-        { productId: "jeans4", quantity: 50 },
-        { productId: "tshirt1", quantity: 110 },
-        { productId: "tshirt2", quantity: 100 },
-        { productId: "tshirt3", quantity: 30 },
-        { productId: "tshirt4", quantity: 40 },
-        { productId: "pants1", quantity: 20 },
-        { productId: "pants2", quantity: 75 },
-        { productId: "pants3", quantity: 0 },
-        { productId: "pants4", quantity: 820 }
+        { productId: "hoodie1", quantity: 180 , inbound:40},
+        { productId: "hoodie2", quantity: 200, inbound:40 },
+        { productId: "hoodie3", quantity: 80, inbound:40 },
+        { productId: "hoodie4", quantity: 70, inbound:40 },
+        { productId: "shirt1", quantity: 70, inbound:40 },
+        { productId: "shirt2", quantity: 100 , inbound:40},
+        { productId: "shirt3", quantity: 50, inbound:40 },
+        { productId: "shirt4", quantity: 40 , inbound:40},
+        { productId: "jeans1", quantity: 80, inbound:40 },
+        { productId: "jeans2", quantity: 70, inbound:40 },
+        { productId: "jeans3", quantity: 60, inbound:40 },
+        { productId: "jeans4", quantity: 50, inbound:40 },
+        { productId: "tshirt1", quantity: 110, inbound:40 },
+        { productId: "tshirt2", quantity: 100, inbound:40 },
+        { productId: "tshirt3", quantity: 30 , inbound:40},
+        { productId: "tshirt4", quantity: 40 , inbound:40},
+        { productId: "pants1", quantity: 20, inbound:40 },
+        { productId: "pants2", quantity: 75, inbound:40 },
+        { productId: "pants3", quantity: 0 , inbound:40},
+        { productId: "pants4", quantity: 820, inbound:40 }
       ]
     },
 
     {
       storeId: "storeD",
       items: [
-        { productId: "hoodie1", quantity: 20 },
-        { productId: "hoodie2", quantity: 35 },
-        { productId: "hoodie3", quantity: 80 },
-        { productId: "hoodie4", quantity: 80 },
-        { productId: "shirt1", quantity: 30 },
-        { productId: "shirt2", quantity: 50 },
-        { productId: "shirt3", quantity: 80 },
-        { productId: "shirt4", quantity: 80 },
-        { productId: "jeans1", quantity: 85 },
-        { productId: "jeans2", quantity: 90 },
-        { productId: "jeans3", quantity: 180 },
-        { productId: "jeans4", quantity: 50 },
-        { productId: "tshirt1", quantity: 80 },
-        { productId: "tshirt2", quantity: 45 },
-        { productId: "tshirt3", quantity: 40 },
-        { productId: "tshirt4", quantity: 80 },
-        { productId: "pants1", quantity: 20 },
-        { productId: "pants2", quantity: 75 },
-        { productId: "pants3", quantity: 0 },
-        { productId: "pants4", quantity: 820 }
+        { productId: "hoodie1", quantity: 20, inbound:40 },
+        { productId: "hoodie2", quantity: 35, inbound:40 },
+        { productId: "hoodie3", quantity: 80, inbound:40 },
+        { productId: "hoodie4", quantity: 80, inbound:40 },
+        { productId: "shirt1", quantity: 30, inbound:40 },
+        { productId: "shirt2", quantity: 50, inbound:40 },
+        { productId: "shirt3", quantity: 80, inbound:40 },
+        { productId: "shirt4", quantity: 80, inbound:40 },
+        { productId: "jeans1", quantity: 85, inbound:40 },
+        { productId: "jeans2", quantity: 90, inbound:40 },
+        { productId: "jeans3", quantity: 180, inbound:40 },
+        { productId: "jeans4", quantity: 50, inbound:40 },
+        { productId: "tshirt1", quantity: 80, inbound:40 },
+        { productId: "tshirt2", quantity: 45, inbound:40 },
+        { productId: "tshirt3", quantity: 40, inbound:40 },
+        { productId: "tshirt4", quantity: 80, inbound:40 },
+        { productId: "pants1", quantity: 20 , inbound:40},
+        { productId: "pants2", quantity: 75 , inbound:40},
+        { productId: "pants3", quantity: 0 , inbound:40},
+        { productId: "pants4", quantity: 820, inbound:40 }
       ]
     },
 
     {
       storeId: "storeE",
       items: [
-        { productId: "hoodie1", quantity: 120 },
-        { productId: "hoodie2", quantity: 110 },
-        { productId: "hoodie3", quantity: 110 },
-        { productId: "hoodie4", quantity: 80 },
-        { productId: "shirt1", quantity: 80 },
-        { productId: "shirt2", quantity: 70 },
-        { productId: "shirt3", quantity: 60 },
-        { productId: "shirt4", quantity: 50 },
-        { productId: "jeans1", quantity: 70 },
-        { productId: "jeans2", quantity: 140 },
-        { productId: "jeans3", quantity: 130 },
-        { productId: "jeans4", quantity: 40 },
-        { productId: "tshirt1", quantity: 120 },
-        { productId: "tshirt2", quantity: 110 },
-        { productId: "tshirt3", quantity: 130 },
-        { productId: "tshirt4", quantity: 10 }
+        { productId: "hoodie1", quantity: 120 , inbound:40},
+        { productId: "hoodie2", quantity: 110, inbound:40 },
+        { productId: "hoodie3", quantity: 110, inbound:40 },
+        { productId: "hoodie4", quantity: 80, inbound:40 },
+        { productId: "shirt1", quantity: 80, inbound:40 },
+        { productId: "shirt2", quantity: 70, inbound:40 },
+        { productId: "shirt3", quantity: 60 , inbound:40},
+        { productId: "shirt4", quantity: 50 , inbound:40},
+        { productId: "jeans1", quantity: 70, inbound:40 },
+        { productId: "jeans2", quantity: 140, inbound:40 },
+        { productId: "jeans3", quantity: 130, inbound:40 },
+        { productId: "jeans4", quantity: 40 , inbound:40},
+        { productId: "tshirt1", quantity: 120, inbound:40 },
+        { productId: "tshirt2", quantity: 110, inbound:40 },
+        { productId: "tshirt3", quantity: 130, inbound:40 },
+        { productId: "tshirt4", quantity: 10 , inbound:40}
       ]
     }
   ],
@@ -176,35 +182,44 @@ export const imsData = {
       store: "Store A",
       items: ["Hoodie Type 3", "Shirt Type 1", "Pants Type 3"],
       quantities: [100, 50, 70],
-      priority: "High"
+      priority: "High",
+      status: "Pending"
     },
     {
       requestId: "REQ-102",
       store: "Store B",
       items: ["Hoodie Type 4", "Shirt Type 3", "Pants Type 1"],
       quantities: [50, 30, 10],
-      priority: "Medium"
+      priority: "Medium",
+      status: "Pending"
+
     },
     {
       requestId: "REQ-103",
       store: "Store C",
       items: ["Hoodie Type 2", "T-shirt Type 3"],
       quantities: [10, 5],
-      priority: "Urgent"
+      priority: "Urgent",
+      status: "Pending"
+
     },
     {
       requestId: "REQ-104",
       store: "Store D",
       items: ["Hoodie Type 3", "T-shirt Type 4", "Jeans Type 2"],
       quantities: [15, 2, 7],
-      priority: "Urgent"
+      priority: "Urgent",
+      status: "Pending"
+
     },
     {
       requestId: "REQ-105",
       store: "Store E",
       items: ["Pants Type 2", "Shirt Type 3", "Jeans Type 3"],
       quantities: [20, 19, 16],
-      priority: "Low"
+      priority: "Low",
+      status: "Pending"
+
     }
   ]
 };
