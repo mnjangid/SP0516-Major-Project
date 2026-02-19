@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Retail IMS - Stock Transfer Management</title>
+    <link rel="stylesheet" href="regionalOfficerStocks.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="headerTitle">Cloth Retail IMS</div>
+        <button class="logoutbtn"><a href="index.html">Log Out</a></button>
+    </div>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <nav>
+                <a href="regionalOfficerDashboard.html" class="navItem">Dashboard</a>
+                <a href="regionalOfficerHistoricalSales.html" class="navItem">Historical Sales</a>
+                <a href="regionalOfficerStocks.html" class="navItem active">Stock Transfer Management</a>
+            </nav>
+            <div class="sidebarspacer"></div>
+        </div>
+
+        <div class="mainContent">
+
+            <div class="transferCard">
+
+                <h1>Stock Transfer Management</h1>
+
+                <div class="tablewrapper">
+                    <table class="datatable">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Store A</th>
+                                <th>Store B</th>
+                                <th>Store C</th>
+                                <th>Store D</th>
+                                <th>Store E</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="categoryname">Shirt</td>
+                                <td>21</td>
+                                <td>21</td>
+                                <td class="high">53</td>
+                                <td>21</td>
+                                <td class="low">07</td>
+                            </tr>
+                            <tr>
+                                <td class="categoryname">T-Shirt</td>
+                                <td class="low">15</td>
+                                <td>30</td>
+                                <td>21</td>
+                                <td class="high">76</td>
+                                <td>43</td>
+                            </tr>
+                            <tr>
+                                <td class="categoryname">Pant</td>
+                                <td class="low">06</td>
+                                <td>21</td>
+                                <td>25</td>
+                                <td>21</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td class="categoryname">Jeans</td>
+                                <td class="low">03</td>
+                                <td class="high">100</td>
+                                <td class="high">78</td>
+                                <td>21</td>
+                                <td class="low">06</td>
+                            </tr>
+                            <tr>
+                                <td class="categoryname">Hoodie</td>
+                                <td class="low">07</td>
+                                <td class="low">20</td>
+                                <td class="high">54</td>
+                                <td class="high">87</td>
+                                <td>21</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="transferSection">
+                    <div class="transferHeader">
+                        <span class="transferColTitle">From</span>
+                        <span class="transferColTitle">Item</span>
+                        <span class="transferColTitle">Quantity</span>
+                        <span class="transferColTitle">To</span>
+                    </div>
+                    <div class="transferSelects">
+                        <select id="fromStore" class="transferSelect">
+                            <option value="" disabled selected>Select Store</option>
+                            <option value="storeA">Store A</option>
+                            <option value="storeB">Store B</option>
+                            <option value="storeC">Store C</option>
+                            <option value="storeD">Store D</option>
+                            <option value="storeE">Store E</option>
+                        </select>
+                        <select id="transferItem" class="transferSelect">
+                            <option value="" disabled selected>Select Item</option>
+                            <option value="shirt">Shirt</option>
+                            <option value="tshirt">T-Shirt</option>
+                            <option value="pant">Pant</option>
+                            <option value="jeans">Jeans</option>
+                            <option value="hoodie">Hoodie</option>
+                        </select>
+                        <input
+                            type="number"
+                            id="transferQuantity"
+                            class="transferSelect"
+                            placeholder="Enter Qty"
+                            min="1"
+                        />
+                        <select id="toStore" class="transferSelect">
+                            <option value="" disabled selected>Select Store</option>
+                            <option value="storeA">Store A</option>
+                            <option value="storeB">Store B</option>
+                            <option value="storeC">Store C</option>
+                            <option value="storeD">Store D</option>
+                            <option value="storeE">Store E</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="transferFooter">
+                    <button class="transferbtn">Transfer</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="regionalOfficerStocks.js"></script>
+</body>
+</html>

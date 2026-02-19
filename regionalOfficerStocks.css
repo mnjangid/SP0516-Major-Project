@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerTitle {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logoutbtn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logoutbtn a {
+    text-decoration: none;
+    color: white;
+}
+
+.logoutbtn:hover {
+    background-color: #c0392b;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 52px);
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #34495e;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.navItem {
+    display: block;
+    color: #bdc3c7;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.navItem:hover {
+    background-color: #2c3e50;
+}
+
+.navItem.active {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+    border-left: 4px solid #3498db;
+}
+
+.sidebarspacer {
+    flex: 1;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 30px;
+    background-color: #f5f5f5;
+}
+
+.transferCard {
+    background-color: white;
+    border-radius: 6px;
+    padding: 28px 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.transferCard h1 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tablewrapper {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+
+.datatable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.datatable th {
+    background-color: #f4f4f4;
+    color: #2c3e50;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.datatable th:first-child {
+    text-align: left;
+}
+
+.datatable td {
+    padding: 13px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.datatable td:first-child {
+    text-align: left;
+}
+
+.datatable tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.datatable tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.categoryname {
+    font-weight: 600 !important;
+    color: #2c3e50 !important;
+}
+
+.low {
+    color: #e74c3c !important;
+    font-weight: 700 !important;
+}
+
+.high {
+    color: #27ae60 !important;
+    font-weight: 700 !important;
+}
+
+.transferSection {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.transferHeader {
+    display: flex;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.transferColTitle {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.transferColTitle:last-child {
+    border-right: none;
+}
+
+.transferSelects {
+    display: flex;
+}
+
+.transferSelect {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    border-right: 1px solid #ddd;
+    font-size: 14px;
+    color: #444;
+    background-color: white;
+    cursor: pointer;
+}
+
+.transferSelect:last-child {
+    border-right: none;
+}
+
+.transferSelect:focus {
+    outline: none;
+    background-color: #f8f9fa;
+}
+
+select.transferSelect {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23555' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+}
+
+input[type="number"].transferSelect {
+    background-image: none;
+    cursor: text;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.transferFooter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.transferbtn {
+    background-color: #3a46b8;
+    color: white;
+    border: none;
+    padding: 11px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.transferbtn:hover {
+    background-color: #2c3e9e;
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .logoutbtn {
+        align-self: flex-end;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 0;
+    }
+
+    .navItem {
+        padding: 12px 15px;
+        border-left: none;
+        border-bottom: 1px solid #2c3e50;
+    }
+
+    .navItem.active {
+        border-left: none;
+        border-bottom: 3px solid #3498db;
+    }
+
+    .sidebarspacer {
+        display: none;
+    }
+
+    .mainContent {
+        padding: 15px;
+    }
+
+    .tablewrapper {
+        overflow-x: auto;
+    }
+
+    .datatable {
+        white-space: nowrap;
+    }
+
+    .transferSection {
+        overflow-x: auto;
+    }
+
+    .transferHeader,
+    .transferSelects {
+        min-width: 500px;
+    }
+
+    .transferFooter {
+        justify-content: stretch;
+    }
+
+    .transferbtn {
+        width: 100%;
+    }
+}
