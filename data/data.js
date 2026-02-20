@@ -273,3 +273,36 @@ export const datasets = [
         backgroundColor: '#5b8abf'
     }
 ];
+
+
+// Historical Sales Data 
+
+export const historicalSalesData=[
+
+{ months : ['Jan', 'Feb', 'Mar', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+
+ actualSalesData : [550, 420, 330, 600, 480, 780, 680, 870, 1020, 650, 720, 850],
+        
+ forecastedSalesData : [400, 800, 600, 750, 1000, 900, 1050, 1230, 920, 950, 1020, 1000]
+},
+
+{
+    storeNames : ['Store E', 'Store A', 'Store D', 'Store C', 'Store B'],
+     storeSalesData : [100000, 300000, 50000, 200000, 600000],
+     storeColors : ['#3498db', '#4a56c8', '#e8a030', '#5bc8c8', '#e74c3c']
+
+},
+
+{
+  categoryNames : ['TShirt', 'Shirt', 'Pants', 'Jeans', 'Hoodie'],
+   categorySalesData : [40000, 30000, 25000, 20000, 20000],
+   categoryColors : ['#3498db', '#e74c3c', '#5bc8c8', '#e8a030', '#4a56c8']
+},
+
+
+{
+  q4StoreNames : ['Store A', 'Store B', 'Store C', 'Store D', 'Store E'],
+  q4ForecastData : [180000, 80000, 60000, 50000, 40000]
+
+}
+]

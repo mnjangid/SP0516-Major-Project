@@ -1,4 +1,4 @@
-import { labels, datasets } from "./regionalOfficerDashboardData.js";
+import { labels, datasets } from "../data/data.js";
 
 window.onload = function() {
 
