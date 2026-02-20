@@ -1,29 +1,55 @@
 
 
-document.getElementById("loginform").addEventListener("submit", (e) => {
+// document.getElementById("loginform").addEventListener("submit", (e) => {
+//     e.preventDefault();
+
+//     const role = document.getElementById("role").value;
+
+//     if (!role) {
+//         alert("Please select a role");
+//         return;
+//     }
+
+//     switch (role) {
+//         case "storemanager":
+//             window.location.href = "storeManager/storeManagerDashboard.html";
+//             break;
+
+//         case "warehousestaff":
+//             window.location.href = "warehousestaff/warehousePackShip.html";
+//             break;
+
+//         case "regionalmanager":
+//             window.location.href = "regionalOfficer/regionalOfficerDashboard.html";
+//             break;
+
+//         default:
+//             alert("Invalid role selected");
+//     }
+// });
+
+
+
+import { imsData } from "./data/data.js";
+const form = document.getElementById("loginform");
+form.addEventListener("submit",(e)=>{
     e.preventDefault();
-
     const role = document.getElementById("role").value;
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
 
-    if (!role) {
-        alert("Please select a role");
+    // user check kr rha h
+    const user = imsData.users.find(u=>
+        u.role===role &&
+        u.email===email &&
+        u.password===password
+    );
+    if(!user){
+        alert("User not found");
         return;
     }
-
-    switch (role) {
-        case "storemanager":
-            window.location.href = "storeManager/storeManagerDashboard.html";
-            break;
-
-        case "warehousestaff":
-            window.location.href = "warehousestaff/warehousePackShip.html";
-            break;
-
-        case "regionalmanager":
-            window.location.href = "regionalOfficer/regionalOfficerDashboard.html";
-            break;
-
-        default:
-            alert("Invalid role selected");
+    else{
+        // alert("Login Successful");
+        window.location.href = user.redirect;
     }
 });

@@ -4,9 +4,24 @@
 
 export const imsData = {
   users: [
-    { role: "store-manager", name: "Store Manager" },
-    { role: "warehouse-staff", name: "Warehouse Staff" },
-    { role: "regional-officer", name: "Regional Officer" }
+    {
+      role: "storemanager",
+      email: "manmeet@ims.com",
+      password: "manmeet@123",
+      redirect: "./storeManager/storeManagerDashboard.html"
+    },
+    {
+      role: "warehousestaff",
+      email: "manmohan@ims.com",
+      password: "manmohan@123",
+      redirect: "./warehouseStaff/warehousePackShip.html"
+    },
+    {
+      role: "regionalmanager",
+      email: "krishan@ims.com",
+      password: "krishan@123",
+      redirect: "./regionalOfficer/regionalOfficerDashboard.html"
+    }
   ],
 
   stores: [
