@@ -49,6 +49,8 @@ form.addEventListener("submit",(e)=>{
     if(!user){
         // alert("User not found");
         loginCard.classList.add("shake");
+        document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
         document.getElementById("LoginFailed").innerText = "Invalid user or password";
         setTimeout(()=>{
             loginCard.classList.remove("shake");
@@ -59,7 +61,8 @@ form.addEventListener("submit",(e)=>{
         // alert("Login Successful");
         window.location.href = user.redirect;
     }
-    window.addEventListener("pageshow",()=>{
+    
+});
+window.addEventListener("pageshow",()=>{
         document.getElementById("loginform").reset();
-    })
 });
