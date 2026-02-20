@@ -1,4 +1,5 @@
 
+// // pehle sirf select value ke basis pr redirect ho rha tha
 
 // document.getElementById("loginform").addEventListener("submit", (e) => {
 //     e.preventDefault();
@@ -52,4 +53,7 @@ form.addEventListener("submit",(e)=>{
         // alert("Login Successful");
         window.location.href = user.redirect;
     }
+    window.addEventListener("pageshow",()=>{
+        document.getElementById("loginform").reset();
+    })
 });
