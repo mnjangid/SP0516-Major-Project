@@ -1,63 +1,72 @@
+
 body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Poppins', sans-serif;
-        background-color: #5396d99d;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b1c24 0%, #123847 40%, #1b5e7a 100%);
+  color: #e6f6fb;
+}
 
-    .card {
-        background-color: #afe1eec8;
-        padding: 40px;
-        border-radius: 10px;
-        width: 90%;
-        max-width: 600px;
-        text-align: center;
-        box-shadow: 0px 8px 12px #48a9f4;
-    }
+.card {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  background: linear-gradient(145deg, #0b1c24, #0f2a35);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0px 8px 12px #0f2a35;
 
-    h1 {
-        margin-bottom: 10px;
-        font-size: 30px;
-    }
+  border: 1px solid rgba(79, 195, 220, 0.3);
+}
 
-    .project {
-        margin-bottom: 20px;
-        font-size: 18px;
-        color: #61a5c2;
-    }
+h1 {
+  color: black;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
 
-    .leader {
-        font-weight: bold;
-        margin: 15px 0;
-    }
+.project {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #61a5c2;
+}
 
-    .members {
-        margin: 12px 0;
-        line-height: 1.8;
-    }
+.leader {
+  font-weight: bold;
+  margin: 15px 0;
+}
 
-    .copyright {
-        margin-top: 20px;
-        font-size: 14px;
-        color: #ccd0d9aa;
-    }
+.members {
+  margin: 12px 0;
+  line-height: 1.8;
+}
 
-    button {
-        margin-top: 25px;
-        padding: 8px 12px;
-        border:none;
-        border-radius: 12px;
-        transition: all 0.4s ease;
-        background-color: #4e4e50;
-        color: rgba(245, 247, 249, 0.593);
-        cursor: pointer;
-    }
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccd0d9aa;
+}
 
-    button:hover {
-        transform: translateY(-2px);
-        background-color: #212121;
-    }
+button {
+  margin-top: 25px;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, #5fb3ce, #4aa8c2);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(79, 195, 220, 0.35);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  background-color: #212121;
+  box-shadow: 0 6px 18px rgba(79, 195, 220, 0.5);
+}
