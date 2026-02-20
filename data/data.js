@@ -18,30 +18,30 @@ export const imsData = {
   ],
 
   products: [
-    { id: "hoodie1", name: "Hoodie Type 1", category: "Hoodie", quantity: "30"},
-    { id: "hoodie2", name: "Hoodie Type 2", category: "Hoodie", quantity: "100" },
-    { id: "hoodie3", name: "Hoodie Type 3", category: "Hoodie", quantity: "150" },
-    { id: "hoodie4", name: "Hoodie Type 4", category: "Hoodie", quantity: "80"},
+    { id: "hoodie", name: "Hoodie Type 1", category: "Hoodie", quantity: "130"},
+    { id: "hoodie", name: "Hoodie Type 2", category: "Hoodie", quantity: "100" },
+    { id: "hoodie", name: "Hoodie Type 3", category: "Hoodie", quantity: "70" },
+    { id: "hoodie", name: "Hoodie Type 4", category: "Hoodie", quantity: "80"},
 
-    { id: "shirt1", name: "Shirt Type 1", category: "Shirt", quantity: "500" },
-    { id: "shirt2", name: "Shirt Type 2", category: "Shirt", quantity: "100" },
-    { id: "shirt3", name: "Shirt Type 3", category: "Shirt", quantity: "30" },
-    { id: "shirt4", name: "Shirt Type 4", category: "Shirt", quantity: "30" },
+    { id: "shirt", name: "Shirt Type 1", category: "Shirt", quantity: "20" },
+    { id: "shirt", name: "Shirt Type 2", category: "Shirt", quantity: "100" },
+    { id: "shirt", name: "Shirt Type 3", category: "Shirt", quantity: "30" },
+    { id: "shirt", name: "Shirt Type 4", category: "Shirt", quantity: "120" },
 
-    { id: "jeans1", name: "Jeans Type 1", category: "Jeans", quantity: "50" },
-    { id: "jeans2", name: "Jeans Type 2", category: "Jeans", quantity: "35" },
-    { id: "jeans3", name: "Jeans Type 3", category: "Jeans", quantity: "50" },
-    { id: "jeans4", name: "Jeans Type 4", category: "Jeans", quantity: "10" },
+    { id: "jeans", name: "Jeans Type 1", category: "Jeans", quantity: "150" },
+    { id: "jeans", name: "Jeans Type 2", category: "Jeans", quantity: "35" },
+    { id: "jeans", name: "Jeans Type 3", category: "Jeans", quantity: "50" },
+    { id: "jeans", name: "Jeans Type 4", category: "Jeans", quantity: "110" },
 
-    { id: "tshirt1", name: "T-shirt Type 1", category: "T-shirt", quantity: "70" },
-    { id: "tshirt2", name: "T-shirt Type 2", category: "T-shirt", quantity: "25" },
-    { id: "tshirt3", name: "T-shirt Type 3", category: "T-shirt", quantity: "75" },
-    { id: "tshirt4", name: "T-shirt Type 4", category: "T-shirt", quantity: "70" },
+    { id: "tshirt", name: "T-shirt Type 1", category: "T-shirt", quantity: "70" },
+    { id: "tshirt", name: "T-shirt Type 2", category: "T-shirt", quantity: "125" },
+    { id: "tshirt", name: "T-shirt Type 3", category: "T-shirt", quantity: "75" },
+    { id: "tshirt", name: "T-shirt Type 4", category: "T-shirt", quantity: "120" },
 
-    { id: "pants1", name: "Pant Type 1", category: "Pants", quantity: "80" },
-    { id: "pants2", name: "Pant Type 2", category: "Pants", quantity: "38" },
-    { id: "pants3", name: "Pant Type 3", category: "Pants", quantity: "40" },
-    { id: "pants4", name: "Pant Type 4", category: "Pants", quantity: "20" }
+    { id: "pants", name: "Pant Type 1", category: "Pants", quantity: "180" },
+    { id: "pants", name: "Pant Type 2", category: "Pants", quantity: "38" },
+    { id: "pants", name: "Pant Type 3", category: "Pants", quantity: "40" },
+    { id: "pants", name: "Pant Type 4", category: "Pants", quantity: "10" }
   ],
 
   inventory: [
