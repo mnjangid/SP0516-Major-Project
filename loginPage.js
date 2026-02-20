@@ -33,6 +33,7 @@
 
 import { imsData } from "./data/data.js";
 const form = document.getElementById("loginform");
+const loginCard = document.getElementById("loginCard");
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
     const role = document.getElementById("role").value;
@@ -46,9 +47,14 @@ form.addEventListener("submit",(e)=>{
         u.password===password
     );
     if(!user){
-        alert("User not found");
+        // alert("User not found");
+        
+        loginCard.classList.add("shake");
+        setTimeout(()=>{
+            loginCard.classList.remove("shake");
+        },400)
         return;
-    }
+    }     
     else{
         // alert("Login Successful");
         window.location.href = user.redirect;
