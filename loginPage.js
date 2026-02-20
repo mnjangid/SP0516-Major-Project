@@ -48,8 +48,8 @@ form.addEventListener("submit",(e)=>{
     );
     if(!user){
         // alert("User not found");
-        
         loginCard.classList.add("shake");
+        document.getElementById("LoginFailed").innerText = "Invalid user or password";
         setTimeout(()=>{
             loginCard.classList.remove("shake");
         },400)

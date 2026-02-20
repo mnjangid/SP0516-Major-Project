@@ -156,7 +156,11 @@ body {
 }
 
 
-/* Shake animation */
+.shake {
+  animation: shake 0.4s ease;
+  border-color: #e74c3c !important;
+}
+
 @keyframes shake {
   0% { transform: translateX(0); }
   20% { transform: translateX(-8px); }
@@ -166,13 +170,14 @@ body {
   100% { transform: translateX(0); }
 }
 
-/* Class applied on error */
-.shake {
-  animation: shake 0.4s ease;
-  border-color: #e74c3c !important;
+
+
+.LoginFailed{
+    color: #e74c36;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
 }
-
-
 
 @media screen and (max-width: 768px) {
     .wrapper {
