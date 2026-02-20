@@ -17,7 +17,7 @@ body {
 
 .leftsection {
     flex: 1;
-    background: linear-gradient(160deg, #7f9ee2, #0096c7);
+    background: linear-gradient(90deg, #5b86e4, #2b6072);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,6 +38,7 @@ body {
 .rightsection {
     flex: 1;
     background-color: #212121;
+    background: linear-gradient(160deg, #000000, #0b2b36);
     display: flex;
     align-items: center;
     justify-content: center;
