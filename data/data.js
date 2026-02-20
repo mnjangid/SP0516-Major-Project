@@ -32,11 +32,11 @@ export const imsData = {
     { id: "storeE", name: "Store E", city: "Jodhpur" }
   ],
 
-  products: [
-    { id: "hoodie", name: "Hoodie Type 1", category: "Hoodie", quantity: "130"},
-    { id: "hoodie", name: "Hoodie Type 2", category: "Hoodie", quantity: "100" },
-    { id: "hoodie", name: "Hoodie Type 3", category: "Hoodie", quantity: "70" },
-    { id: "hoodie", name: "Hoodie Type 4", category: "Hoodie", quantity: "80"},
+   products: [
+    { id: "hoodie", name: "Hoodie Type 1", category: "Hoodie", quantity: "30"},
+    { id: "hoodie", name: "Hoodie Type 2", category: "Hoodie", quantity: "10" },
+    { id: "hoodie", name: "Hoodie Type 3", category: "Hoodie", quantity: "20" },
+    { id: "hoodie", name: "Hoodie Type 4", category: "Hoodie", quantity: "10"},
 
     { id: "shirt", name: "Shirt Type 1", category: "Shirt", quantity: "20" },
     { id: "shirt", name: "Shirt Type 2", category: "Shirt", quantity: "100" },
@@ -53,8 +53,8 @@ export const imsData = {
     { id: "tshirt", name: "T-shirt Type 3", category: "T-shirt", quantity: "75" },
     { id: "tshirt", name: "T-shirt Type 4", category: "T-shirt", quantity: "120" },
 
-    { id: "pants", name: "Pant Type 1", category: "Pants", quantity: "180" },
-    { id: "pants", name: "Pant Type 2", category: "Pants", quantity: "38" },
+    { id: "pants", name: "Pant Type 1", category: "Pants", quantity: "80" },
+    { id: "pants", name: "Pant Type 2", category: "Pants", quantity: "20" },
     { id: "pants", name: "Pant Type 3", category: "Pants", quantity: "40" },
     { id: "pants", name: "Pant Type 4", category: "Pants", quantity: "10" }
   ],
