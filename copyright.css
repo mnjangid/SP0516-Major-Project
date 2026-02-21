@@ -14,36 +14,50 @@ body {
 
 .card {
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
   text-align: center;
   background: linear-gradient(145deg, #0b1c24, #0f2a35);
   border-radius: 16px;
   padding: 30px;
   box-shadow: 0px 8px 12px #0f2a35;
+  height: 600px;
 
   border: 1px solid rgba(79, 195, 220, 0.3);
 }
 
 h1 {
-  color: black;
+  color: rgb(118, 111, 131);
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 60px;
 }
 
 .project {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 48px;
   color: #61a5c2;
 }
 
 .leader {
   font-weight: bold;
   margin: 15px 0;
+  font-size: 22px;
 }
 
 .members {
   margin: 12px 0;
   line-height: 1.8;
+  font-size: 22px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover{
+  transition: all ease-in;
+  color: blue;
 }
 
 .copyright {
