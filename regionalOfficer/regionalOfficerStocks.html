@@ -9,7 +9,12 @@
   <body>
     <div class="header">
       <div class="headerTitle">Cloth Retail IMS</div>
-      <button class="logoutbtn"><a href="../index.html">Log Out</a></button>
+      <button class="logoutbtn" id="logoutBtnn">Log Out</button>
+        <script>
+             document.getElementById("logoutBtnn").addEventListener("click", function () {
+                      window.location.href = "../index.html";
+              });
+        </script>
     </div>
 
     <div class="container">

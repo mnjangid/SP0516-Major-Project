@@ -34,14 +34,14 @@ The system replaces manual record-keeping with a simple and efficient automated 
 
 - Login page with role selection and authentication fields
 - Dashboard layout with stock overview   
-- Dark-themed interface with teal and beige accents 
+
 
 ## 🏗 Project Making
 
 - Designed structure using HTML 
 - Styled the interface using CSS with a modern color theme  
 - Implemented business logic using JavaScript  
-- Used a centralized JavaScript dagta file to manage application data
+- Used a centralized JavaScript data file to manage application data
 - Tested functionality 
 
 
@@ -54,10 +54,10 @@ The system replaces manual record-keeping with a simple and efficient automated 
 
 ## 🔮 Future Enhancements
 
-- Backend integration (Node.js / PHP / Python)  
+- Backend integration (Node.js / PHP / Java)  
 - Database support (PostgresSQL / MongoDB) 
 - Admin role and Procurement officer role in future  
-- Secure authentication system  
+- Secure authentication system (JWT / Token authentication)  
 - Invoice and billing module  
 - Barcode scanner integration  
 - Cloud deployment and hosting  
