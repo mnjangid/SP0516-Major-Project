@@ -18,7 +18,6 @@ The system replaces manual record-keeping with a simple and efficient automated 
 
 ## 🚀 Major Features
 
-- Add, edit, and delete clothing products  
 - Manage product categories  
 - Track stock quantity in real time  
 - Role-based login selection 
@@ -34,7 +33,7 @@ The system replaces manual record-keeping with a simple and efficient automated 
 
 - Login page with role selection and authentication fields
 - Dashboard layout with stock overview   
-
+- Used figma wireframe 
 
 ## 🏗 Project Making
 
